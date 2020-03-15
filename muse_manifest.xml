@@ -1,0 +1,103 @@
+<manifest alg="2" build="2015.1.1.343" opt="true" iceEnabled="false" exportTarget="other" domain="www.siwalik.in" resolutions="1x" timestamp="1472410778322">
+  <folder name="css">
+    <file name="site_global.css" crc="4109909689"/>
+    <file name="index.css" crc="4250255530" ref="index"/>
+    <file name="nomq_index.css" crc="4206323211" ref="index"/>
+  </folder>
+  <folder name="scripts">
+    <file name="jquery-1.8.3.min.js" crc="484278746" ref="index"/>
+    <file name="museutils.js" crc="531812214" ref="index"/>
+    <file name="whatinput.js" crc="84559013" ref="index"/>
+    <file name="jquery.watch.js" crc="3866665977" ref="index"/>
+    <file name="pie.js" crc="3827607177" ref="index"/>
+    <file name="webpro.js" crc="4156477058" ref="index"/>
+    <file name="musewpslideshow.js" crc="4058618124" ref="index"/>
+    <file name="jquery.museoverlay.js" crc="3810062583" ref="index"/>
+    <file name="touchswipe.js" crc="4174436727" ref="index"/>
+    <file name="jquery.musepolyfill.bgsize.js" crc="120190942" ref="index"/>
+    <file name="jquery.museresponsive.js" crc="367458044" ref="index"/>
+  </folder>
+  <folder name="images">
+    <file name="bg.jpg" crc="215874170" ref="index"/>
+    <file name="_dsc0973.jpg" crc="522606563" seo="true" ref="index"/>
+    <file name="1-ps.jpg" crc="451825066" seo="true" ref="index"/>
+    <file name="1-ai.jpg" crc="326464894" seo="true" ref="index"/>
+    <file name="cards-u1202.png" crc="3836887058" ref="index"/>
+    <file name="masking-4-2.png" crc="238711043" seo="true" ref="index"/>
+    <file name="siwalikin_logos_siwalik_mukherjee (1).png" crc="509742699" seo="true" ref="index"/>
+    <file name="blank.gif" crc="4208392903" ref="index"/>
+    <file name="siwalikin_logos_siwalik_mukherjee (2).png" crc="3786156535" seo="true" ref="index"/>
+    <file name="siwalikin_logos_siwalik_mukherjee (3).png" crc="7131128" seo="true" ref="index"/>
+    <file name="siwalikin_logos_siwalik_mukherjee (4).png" crc="4116533219" seo="true" ref="index"/>
+    <file name="siwalikin_logos_siwalik_mukherjee (5).png" crc="325544138" seo="true" ref="index"/>
+    <file name="siwalikin_logos_siwalik_mukherjee (16).png" crc="268069857" seo="true" ref="index"/>
+    <file name="siwalikin_logos_siwalik_mukherjee (6).png" crc="177035467" seo="true" ref="index"/>
+    <file name="siwalikin_logos_siwalik_mukherjee (7).png" crc="3829814002" seo="true" ref="index"/>
+    <file name="siwalikin_logos_siwalik_mukherjee (8).png" crc="464570613" seo="true" ref="index"/>
+    <file name="siwalikin_logos_siwalik_mukherjee (9).png" crc="4293371140" seo="true" ref="index"/>
+    <file name="siwalikin_logos_siwalik_mukherjee (10).png" crc="246427521" seo="true" ref="index"/>
+    <file name="siwalikin_logos_siwalik_mukherjee (11).png" crc="127462488" seo="true" ref="index"/>
+    <file name="siwalikin_logos_siwalik_mukherjee (12).png" crc="4007999392" seo="true" ref="index"/>
+    <file name="siwalikin_logos_siwalik_mukherjee (13).png" crc="504461201" seo="true" ref="index"/>
+    <file name="siwalikin_logos_siwalik_mukherjee (14).png" crc="3958211695" seo="true" ref="index"/>
+    <file name="siwalikin_logos_siwalik_mukherjee (15).png" crc="4195773735" seo="true" ref="index"/>
+    <file name="loading.gif" crc="3815509949" ref="index"/>
+    <file name="scrapbook1.png" crc="379087324" seo="true" ref="index"/>
+    <file name="siwalikin_siwalik_mukherjee_sketches__0000_sketch-_0006_layer-6.png" crc="4235772187" seo="true" ref="index"/>
+    <file name="siwalikin_siwalik_mukherjee_sketches__0001_layer-11.png" crc="299636698" seo="true" ref="index"/>
+    <file name="siwalikin_siwalik_mukherjee_sketches__0002_layer-10.png" crc="3919509169" seo="true" ref="index"/>
+    <file name="siwalikin_siwalik_mukherjee_sketches__0003_sketch-_0003_layer-8.png" crc="167529172" seo="true" ref="index"/>
+    <file name="siwalikin_siwalik_mukherjee_sketches__0004_sketch-_0000_layer-14.png" crc="3955653131" seo="true" ref="index"/>
+    <file name="siwalikin_siwalik_mukherjee_sketches__0005_sketch-_0001_layer-13.png" crc="64377108" seo="true" ref="index"/>
+    <file name="siwalikin_siwalik_mukherjee_sketches__0006_layer-9.png" crc="85811199" seo="true" ref="index"/>
+    <file name="siwalikin_siwalik_mukherjee_sketches__0007_layer-7.png" crc="4072768996" seo="true" ref="index"/>
+    <file name="siwalikin_siwalik_mukherjee_sketches__0008_layer-8.png" crc="3881578372" seo="true" ref="index"/>
+    <file name="siwalikin_siwalik_mukherjee_sketches__0009_sketch-_0002_layer-11.png" crc="3911266353" seo="true" ref="index"/>
+    <file name="siwalikin_siwalik_mukherjee_sketches__0010_layer-4.png" crc="78724743" seo="true" ref="index"/>
+    <file name="siwalikin_siwalik_mukherjee_sketches__0011_layer-3.png" crc="3855335043" seo="true" ref="index"/>
+    <file name="macbook.png" crc="50850067" seo="true" ref="index"/>
+    <file name="siwalikin_siwalik_mukherjee_screenshots__0000_layer-11.jpg" crc="508809942" seo="true" ref="index"/>
+    <file name="siwalikin_siwalik_mukherjee_screenshots__0001_layer-10.png" crc="3899192424" seo="true" ref="index"/>
+    <file name="siwalikin_siwalik_mukherjee_screenshots__0002_layer-9.png" crc="3870863589" seo="true" ref="index"/>
+    <file name="siwalikin_siwalik_mukherjee_screenshots__0003_layer-8.png" crc="85622249" seo="true" ref="index"/>
+    <file name="siwalikin_siwalik_mukherjee_screenshots__0004_layer-6.png" crc="71217095" seo="true" ref="index"/>
+    <file name="siwalikin_siwalik_mukherjee_screenshots__0005_layer-5.jpg" crc="125948313" seo="true" ref="index"/>
+    <file name="siwalikin_siwalik_mukherjee_screenshots__0006_layer-12.jpg" crc="3893291010" seo="true" ref="index"/>
+    <file name="siwalikin_siwalik_mukherjee_screenshots__0007_web1.jpg" crc="203793255" seo="true" ref="index"/>
+    <file name="siwalikin_siwalik_mukherjee_screenshots__0008_layer-2.png" crc="518948646" seo="true" ref="index"/>
+    <file name="siwalikin_siwalik_mukherjee_screenshots__0009_layer-1.png" crc="3912372363" seo="true" ref="index"/>
+    <file name="siwalikin_siwalik_mukherjee_screenshots__0010_layer-15.jpg" crc="319213913" seo="true" ref="index"/>
+    <file name="2-css.jpg" crc="4037031212" seo="true" ref="index"/>
+    <file name="2-html.jpg" crc="385941228" seo="true" ref="index"/>
+    <file name="2-jquery.jpg" crc="3912793181" seo="true" ref="index"/>
+    <file name="2-js.jpg" crc="3982074118" seo="true" ref="index"/>
+    <file name="2-mysql.jpg" crc="4231930123" seo="true" ref="index"/>
+    <file name="2-php.jpg" crc="62838079" seo="true" ref="index"/>
+    <file name="2-scss.jpg" crc="126408496" seo="true" ref="index"/>
+    <file name="3-cordova.jpg" crc="4032441632" seo="true" ref="index"/>
+    <file name="court-app.gif" crc="4011305585" seo="true" ref="index"/>
+    <file name="gesture-.gif" crc="4192449132" seo="true" ref="index"/>
+    <file name="4-pyrhon.jpg" crc="33167815" seo="true" ref="index"/>
+    <file name="iphone6plus_spacegrey_portrait.png" crc="3873285130" seo="true" ref="index"/>
+    <file name="u7986.png" crc="4040082237" ref="index"/>
+    <file name="u7986-r.png" crc="122210060" ref="index"/>
+    <file name="u7994.png" crc="3806984860" ref="index"/>
+    <file name="u7994-r.png" crc="105026507" ref="index"/>
+    <file name="u8001.png" crc="4067478609" ref="index"/>
+    <file name="u8001-r.png" crc="76364326" ref="index"/>
+    <file name="u8842.png" crc="3928139555" ref="index"/>
+    <file name="u8842-r.png" crc="405307276" ref="index"/>
+    <file name="portfolio-of-siwalik-mukherjee---web-designer---developer-favicon.ico" crc="146862990" ref="index"/>
+    <file name="cards-u12022.png" crc="3979153562" ref="index"/>
+    <file name="u79862.png" crc="4040082237" ref="index"/>
+    <file name="u7986-r2.png" crc="122210060" ref="index"/>
+    <file name="u79942.png" crc="3806984860" ref="index"/>
+    <file name="u7994-r2.png" crc="105026507" ref="index"/>
+    <file name="u80012.png" crc="4067478609" ref="index"/>
+    <file name="u8001-r2.png" crc="76364326" ref="index"/>
+    <file name="u88422.png" crc="3928139555" ref="index"/>
+    <file name="u8842-r2.png" crc="405307276" ref="index"/>
+    <file name="_dsc0973-crop-u6543.jpg" crc="386779534" ref="index"/>
+  </folder>
+  <file name="index.html" crc="229829648" seo="true" mt="1472410749027" redirect="true"/>
+</manifest>
