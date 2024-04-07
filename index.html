@@ -3,63 +3,76 @@
 
 <head>
     <script>
-window['_fs_debug'] = false;
-window['_fs_host'] = 'fullstory.com';
-window['_fs_org'] = '7YY4D';
-window['_fs_namespace'] = 'FS';
-(function(m,n,e,t,l,o,g,y){
-    if (e in m) {if(m.console && m.console.log) { m.console.log('FullStory namespace conflict. Please set window["_fs_namespace"].');} return;}
-    g=m[e]=function(a,b){g.q?g.q.push([a,b]):g._api(a,b);};g.q=[];
-    o=n.createElement(t);o.async=1;o.src='https://'+_fs_host+'/s/fs.js';
-    y=n.getElementsByTagName(t)[0];y.parentNode.insertBefore(o,y);
-    g.identify=function(i,v){g(l,{uid:i});if(v)g(l,v)};g.setUserVars=function(v){g(l,v)};
-    g.identifyAccount=function(i,v){o='account';v=v||{};v.acctId=i;g(o,v)};
-    g.clearUserCookie=function(c,d,i){if(!c || document.cookie.match('fs_uid=[`;`]*`[`;`]*`[`;`]*`')){
-    d=n.domain;while(1){n.cookie='fs_uid=;domain='+d+
-    ';path=/;expires='+new Date(0).toUTCString();i=d.indexOf('.');if(i<0)break;d=d.slice(i+1)}}};
-})(window,document,window['_fs_namespace'],'script','user');
-</script>
-  <style>
+        window['_fs_debug'] = false;
+        window['_fs_host'] = 'fullstory.com';
+        window['_fs_org'] = '7YY4D';
+        window['_fs_namespace'] = 'FS';
+        (function (m, n, e, t, l, o, g, y) {
+            if (e in m) { if (m.console && m.console.log) { m.console.log('FullStory namespace conflict. Please set window["_fs_namespace"].'); } return; }
+            g = m[e] = function (a, b) { g.q ? g.q.push([a, b]) : g._api(a, b); }; g.q = [];
+            o = n.createElement(t); o.async = 1; o.src = 'https://' + _fs_host + '/s/fs.js';
+            y = n.getElementsByTagName(t)[0]; y.parentNode.insertBefore(o, y);
+            g.identify = function (i, v) { g(l, { uid: i }); if (v) g(l, v) }; g.setUserVars = function (v) { g(l, v) };
+            g.identifyAccount = function (i, v) { o = 'account'; v = v || {}; v.acctId = i; g(o, v) };
+            g.clearUserCookie = function (c, d, i) {
+                if (!c || document.cookie.match('fs_uid=[`;`]*`[`;`]*`[`;`]*`')) {
+                    d = n.domain; while (1) {
+                        n.cookie = 'fs_uid=;domain=' + d +
+                            ';path=/;expires=' + new Date(0).toUTCString(); i = d.indexOf('.'); if (i < 0) break; d = d.slice(i + 1)
+                    }
+                }
+            };
+        })(window, document, window['_fs_namespace'], 'script', 'user');
+    </script>
+    <style>
+        #u131 {
+            z-index: 3 !important;
+            background: transparent url(../images/bg.jpg) no-repeat top !important;
+            background-size: 100% 139% !important;
+        }
 
-  #u131 {
-    z-index: 3!important;
-    background: transparent url(../images/bg.jpg) no-repeat top!important;
-    background-size: 100% 139%!important;
-}
+        #u6543 {
+            border-color: #306688 !important;
+        }
 
-  #u6543 {
-    border-color: #306688!important;
-  }
-@media (max-width: 425px){
-  h1#u12962-11 {
-      padding-top: 30px;
-      font-size: 30px;
-      line-height: 31px;
-      color: gray;
-  }
-#u12962-4, #u12962-6, #u12962-8, #u12962-10 {
-    display: none!important;
-}
-#u131{
-  background: white!important;
-}
-#page {
-    min-height: 10px!important;
-  }
-#u12962-15 {
-    font-size: 25px!important;
-    line-height: 26px!important;
-    color: #445044!important;
-}
-#u131_position_content {
-    padding-top: 62px!important;
-}
-#u6543 {
-    border-color: #8bdeff!important;
-  }
-}
+        @media (max-width: 425px) {
+            h1#u12962-11 {
+                padding-top: 30px;
+                font-size: 30px;
+                line-height: 31px;
+                color: gray;
+            }
 
-  </style>
+            #u12962-4,
+            #u12962-6,
+            #u12962-8,
+            #u12962-10 {
+                display: none !important;
+            }
+
+            #u131 {
+                background: white !important;
+            }
+
+            #page {
+                min-height: 10px !important;
+            }
+
+            #u12962-15 {
+                font-size: 25px !important;
+                line-height: 26px !important;
+                color: #445044 !important;
+            }
+
+            #u131_position_content {
+                padding-top: 62px !important;
+            }
+
+            #u6543 {
+                border-color: #8bdeff !important;
+            }
+        }
+    </style>
     <script type="text/javascript">
         if (typeof Muse == "undefined") window.Muse = {};
         window.Muse.assets = {
@@ -69,14 +82,17 @@ window['_fs_namespace'] = 'FS';
     </script>
     <meta http-equiv="Content-type" content="text/html;charset=UTF-8" />
     <meta name="theme-color" content="#1c1818">
-    <meta name="description" content="Portfolio of Siwalik Mukherjee, a Web Developer &amp; UI Designer based in India." />
+    <meta name="description"
+        content="Portfolio of Siwalik Mukherjee, a Web Developer &amp; UI Designer based in India." />
     <meta property="og:site_name" content="Siwalik Mukherjee Portfolio" />
     <meta property="og:url" content="http://www.siwalik.in/index.html" />
     <meta property="og:title" content="Check out works by Siwalik Mukherjee - Web Designer &amp; Developer" />
     <meta property="og:image" content="http://www.siwalik.in/images/_dsc0973.jpg" />
-    <meta name="keywords" content="siwalik, mukherjee, siwalik mukherjee, web design, web development, javascript, html, php, logo design, designer" />
+    <meta name="keywords"
+        content="siwalik, mukherjee, siwalik mukherjee, web design, web development, javascript, html, php, logo design, designer" />
     <meta name="generator" content="2015.1.1.343" />
-    <link rel="shortcut icon" href="images/portfolio-of-siwalik-mukherjee---web-designer---developer-favicon.ico?146862990" />
+    <link rel="shortcut icon"
+        href="images/portfolio-of-siwalik-mukherjee---web-designer---developer-favicon.ico?146862990" />
     <title>Portfolio of Siwalik Mukherjee - Web Designer &amp; Developer</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <!-- CSS -->
@@ -97,46 +113,28 @@ window['_fs_namespace'] = 'FS';
     </script>
     <!--custom head HTML-->
     <!-- Global site tag (gtag.js) - Google Analytics -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-132827431-2"></script>
-    <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
-
-    gtag('config', 'UA-132827431-2');
-    </script>
 
     <!-- SEO -->
     <meta name="author" content="Siwalik Mukherjee">
     <meta name="description" content="Portfolio of Siwalik Mukherjee - Web Designer & Developer">
-    <meta name="keywords" content="siwalik, mukherjee, siwalik mukherjee, web design, web development, javascript, html, php, logo design, designer">
+    <meta name="keywords"
+        content="siwalik, mukherjee, siwalik mukherjee, web design, web development, javascript, html, php, logo design, designer">
     <link rel="canonical" href="http://www.siwalik.in/index.html">
 
 </head>
 
 <body>
-    <div class="dont-inspect-too-much-also" style="
-    background: #000000d9;
-    bottom: 0px;
-    color: white;
-    font-family: Arial, Helvetica, sans-serif;
-    left: 0;
-    padding: 15px;
-    position: fixed;
-    font-size: 16px;
-    width: 100%;
-    z-index: 99999;
-    float: left;
-    vertical-align: middle;
-    margin: 0;
-    opacity: .92;
-    font-weight: bold;
-    text-align: center;
-">
-    This is the older version of my personal website, left as an example. Check out my <a href="http://siwalik.in" style="
-    color: #c193f9;
-">current site</a>
-</div>
+    <script
+        src="https://gistcdn.githack.com/siwalikm/5bc4f2bf54781fdeb8f45e9131f48882/raw/e760b7f5a3475d878a6b9b1597a42ebd695fa267/archived_website_footer.js"></script>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-C6E8HM506W"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'G-C6E8HM506W');
+    </script>
 
     <div class="breakpoint active" id="bp_infinity" data-min-width="769">
         <!-- responsive breakpoint node -->
@@ -156,9 +154,13 @@ window['_fs_namespace'] = 'FS';
                             <div class="clearfix" id="u131_align_to_page">
                                 <div class="rounded-corners clip_frame colelem" id="u6543">
                                     <!-- image -->
-                                    <img class="block temp_no_img_src" id="u6543_img" data-orig-src="images/_dsc0973.jpg" alt="Siwalik Mukherjee siwalik.in webdeveloper" data-image-width="187" data-image-height="187" src="images/blank.gif" />
+                                    <img class="block temp_no_img_src" id="u6543_img"
+                                        data-orig-src="images/_dsc0973.jpg"
+                                        alt="Siwalik Mukherjee siwalik.in webdeveloper" data-image-width="187"
+                                        data-image-height="187" src="images/blank.gif" />
                                 </div>
-                                <div class="clearfix colelem shared_content" id="u106-10" data-content-guid="u106-10_content">
+                                <div class="clearfix colelem shared_content" id="u106-10"
+                                    data-content-guid="u106-10_content">
                                     <!-- content -->
                                     <h1 id="u106-2">I'M SIWALIK</h1>
                                     <h1 id="u106-4">A CREATIVE FRONT-END DEVELOPER FROM INDIA</h1>
@@ -175,7 +177,8 @@ window['_fs_namespace'] = 'FS';
                         <!-- group -->
                         <div class="clip_frame grpelem" id="u2679">
                             <!-- image -->
-                            <img class="block temp_no_img_src" id="u2679_img" data-orig-src="images/macbook.png" alt="" data-image-width="651" data-image-height="375" src="images/blank.gif" />
+                            <img class="block temp_no_img_src" id="u2679_img" data-orig-src="images/macbook.png" alt=""
+                                data-image-width="651" data-image-height="375" src="images/blank.gif" />
                         </div>
                         <div class="SlideShowWidget clearfix grpelem" id="slideshowu3204">
                             <!-- none box -->
@@ -184,47 +187,69 @@ window['_fs_namespace'] = 'FS';
                                     <!-- stack box -->
                                     <div class="SSSlide clip_frame grpelem" id="u3208">
                                         <!-- image -->
-                                        <img class="block ImageInclude" id="u3208_img" data-src="images/siwalikin_siwalik_mukherjee_screenshots__0000_layer-11.jpg" src="images/blank.gif" alt="" data-width="466" data-height="293" />
+                                        <img class="block ImageInclude" id="u3208_img"
+                                            data-src="images/siwalikin_siwalik_mukherjee_screenshots__0000_layer-11.jpg"
+                                            src="images/blank.gif" alt="" data-width="466" data-height="293" />
                                     </div>
                                     <div class="SSSlide invi clip_frame grpelem" id="u3328">
                                         <!-- image -->
-                                        <img class="block ImageInclude" id="u3328_img" data-src="images/siwalikin_siwalik_mukherjee_screenshots__0001_layer-10.png" src="images/blank.gif" alt="" data-width="466" data-height="293" />
+                                        <img class="block ImageInclude" id="u3328_img"
+                                            data-src="images/siwalikin_siwalik_mukherjee_screenshots__0001_layer-10.png"
+                                            src="images/blank.gif" alt="" data-width="466" data-height="293" />
                                     </div>
                                     <div class="SSSlide invi clip_frame grpelem" id="u3348">
                                         <!-- image -->
-                                        <img class="block ImageInclude" id="u3348_img" data-src="images/siwalikin_siwalik_mukherjee_screenshots__0002_layer-9.png" src="images/blank.gif" alt="" data-width="466" data-height="293" />
+                                        <img class="block ImageInclude" id="u3348_img"
+                                            data-src="images/siwalikin_siwalik_mukherjee_screenshots__0002_layer-9.png"
+                                            src="images/blank.gif" alt="" data-width="466" data-height="293" />
                                     </div>
                                     <div class="SSSlide invi clip_frame grpelem" id="u3368">
                                         <!-- image -->
-                                        <img class="block ImageInclude" id="u3368_img" data-src="images/siwalikin_siwalik_mukherjee_screenshots__0003_layer-8.png" src="images/blank.gif" alt="" data-width="466" data-height="293" />
+                                        <img class="block ImageInclude" id="u3368_img"
+                                            data-src="images/siwalikin_siwalik_mukherjee_screenshots__0003_layer-8.png"
+                                            src="images/blank.gif" alt="" data-width="466" data-height="293" />
                                     </div>
                                     <div class="SSSlide invi clip_frame clearfix grpelem" id="u3388">
                                         <!-- image -->
-                                        <img class="ImageInclude position_content" id="u3388_img" data-src="images/siwalikin_siwalik_mukherjee_screenshots__0004_layer-6.png" src="images/blank.gif" alt="" data-width="467" data-height="293" />
+                                        <img class="ImageInclude position_content" id="u3388_img"
+                                            data-src="images/siwalikin_siwalik_mukherjee_screenshots__0004_layer-6.png"
+                                            src="images/blank.gif" alt="" data-width="467" data-height="293" />
                                     </div>
                                     <div class="SSSlide invi clip_frame grpelem" id="u3408">
                                         <!-- image -->
-                                        <img class="block ImageInclude" id="u3408_img" data-src="images/siwalikin_siwalik_mukherjee_screenshots__0005_layer-5.jpg" src="images/blank.gif" alt="" data-width="466" data-height="293" />
+                                        <img class="block ImageInclude" id="u3408_img"
+                                            data-src="images/siwalikin_siwalik_mukherjee_screenshots__0005_layer-5.jpg"
+                                            src="images/blank.gif" alt="" data-width="466" data-height="293" />
                                     </div>
                                     <div class="SSSlide invi clip_frame grpelem" id="u3428">
                                         <!-- image -->
-                                        <img class="block ImageInclude" id="u3428_img" data-src="images/siwalikin_siwalik_mukherjee_screenshots__0006_layer-12.jpg" src="images/blank.gif" alt="" data-width="466" data-height="293" />
+                                        <img class="block ImageInclude" id="u3428_img"
+                                            data-src="images/siwalikin_siwalik_mukherjee_screenshots__0006_layer-12.jpg"
+                                            src="images/blank.gif" alt="" data-width="466" data-height="293" />
                                     </div>
                                     <div class="SSSlide invi clip_frame grpelem" id="u3448">
                                         <!-- image -->
-                                        <img class="block ImageInclude" id="u3448_img" data-src="images/siwalikin_siwalik_mukherjee_screenshots__0007_web1.jpg" src="images/blank.gif" alt="" data-width="466" data-height="293" />
+                                        <img class="block ImageInclude" id="u3448_img"
+                                            data-src="images/siwalikin_siwalik_mukherjee_screenshots__0007_web1.jpg"
+                                            src="images/blank.gif" alt="" data-width="466" data-height="293" />
                                     </div>
                                     <div class="SSSlide invi clip_frame grpelem" id="u3468">
                                         <!-- image -->
-                                        <img class="block ImageInclude" id="u3468_img" data-src="images/siwalikin_siwalik_mukherjee_screenshots__0008_layer-2.png" src="images/blank.gif" alt="" data-width="466" data-height="293" />
+                                        <img class="block ImageInclude" id="u3468_img"
+                                            data-src="images/siwalikin_siwalik_mukherjee_screenshots__0008_layer-2.png"
+                                            src="images/blank.gif" alt="" data-width="466" data-height="293" />
                                     </div>
                                     <div class="SSSlide invi clip_frame grpelem" id="u3488">
                                         <!-- image -->
-                                        <img class="block ImageInclude" id="u3488_img" data-src="images/siwalikin_siwalik_mukherjee_screenshots__0009_layer-1.png" src="images/blank.gif" alt="" data-width="466" data-height="293" />
+                                        <img class="block ImageInclude" id="u3488_img"
+                                            data-src="images/siwalikin_siwalik_mukherjee_screenshots__0009_layer-1.png"
+                                            src="images/blank.gif" alt="" data-width="466" data-height="293" />
                                     </div>
                                     <div class="SSSlide invi clip_frame grpelem" id="u3508">
                                         <!-- image -->
-                                        <img class="block ImageInclude" id="u3508_img" data-src="images/siwalikin_siwalik_mukherjee_screenshots__0010_layer-15.jpg" src="images/blank.gif" alt="" data-width="466" data-height="293" />
+                                        <img class="block ImageInclude" id="u3508_img"
+                                            data-src="images/siwalikin_siwalik_mukherjee_screenshots__0010_layer-15.jpg"
+                                            src="images/blank.gif" alt="" data-width="466" data-height="293" />
                                     </div>
                                 </div>
                             </div>
@@ -233,74 +258,92 @@ window['_fs_namespace'] = 'FS';
                                     <!-- stack box -->
                                     <div class="SSSlideCaption clearfix grpelem" id="u3206-6">
                                         <!-- content -->
-                                        <p class="shared_content" data-content-guid="u3206-6_0_content">Riggins Salmon Run</p>
+                                        <p class="shared_content" data-content-guid="u3206-6_0_content">Riggins Salmon
+                                            Run</p>
                                         <p class="shared_content" data-content-guid="u3206-6_1_content">★★★★★</p>
                                     </div>
                                     <div class="SSSlideCaption invi clearfix grpelem" id="u3340-7">
                                         <!-- content -->
-                                        <p id="u3340-2" class="shared_content" data-content-guid="u3340-2_content">Flipt Media Pvt. Ltd.</p>
-                                        <p id="u3340-4" class="shared_content" data-content-guid="u3340-4_content">★★★★★</p>
+                                        <p id="u3340-2" class="shared_content" data-content-guid="u3340-2_content">Flipt
+                                            Media Pvt. Ltd.</p>
+                                        <p id="u3340-4" class="shared_content" data-content-guid="u3340-4_content">★★★★★
+                                        </p>
                                         <p class="shared_content" data-content-guid="u3340-7_2_content">&nbsp;</p>
                                     </div>
                                     <div class="SSSlideCaption invi clearfix grpelem" id="u3360-7">
                                         <!-- content -->
-                                        <p id="u3360-2" class="shared_content" data-content-guid="u3360-2_content">Return of Jesus ~ Blog</p>
-                                        <p id="u3360-4" class="shared_content" data-content-guid="u3360-4_content">★★★★☆</p>
+                                        <p id="u3360-2" class="shared_content" data-content-guid="u3360-2_content">
+                                            Return of Jesus ~ Blog</p>
+                                        <p id="u3360-4" class="shared_content" data-content-guid="u3360-4_content">★★★★☆
+                                        </p>
                                         <p class="shared_content" data-content-guid="u3360-7_2_content">&nbsp;</p>
                                     </div>
                                     <div class="SSSlideCaption invi clearfix grpelem" id="u3380-6">
                                         <!-- content -->
-                                        <p class="shared_content" data-content-guid="u3380-6_0_content">Gradient Shift Graphics Lab</p>
+                                        <p class="shared_content" data-content-guid="u3380-6_0_content">Gradient Shift
+                                            Graphics Lab</p>
                                         <p class="shared_content" data-content-guid="u3380-6_1_content">★★★★★</p>
                                     </div>
                                     <div class="SSSlideCaption invi clearfix grpelem" id="u3400-7">
                                         <!-- content -->
-                                        <p id="u3400-2" class="shared_content" data-content-guid="u3400-2_content">Wildland Fire Shirts Store</p>
-                                        <p id="u3400-4" class="shared_content" data-content-guid="u3400-4_content">★★★★★</p>
+                                        <p id="u3400-2" class="shared_content" data-content-guid="u3400-2_content">
+                                            Wildland Fire Shirts Store</p>
+                                        <p id="u3400-4" class="shared_content" data-content-guid="u3400-4_content">★★★★★
+                                        </p>
                                         <p class="shared_content" data-content-guid="u3400-7_2_content">&nbsp;</p>
                                     </div>
                                     <div class="SSSlideCaption invi clearfix grpelem" id="u3420-6">
                                         <!-- content -->
-                                        <p class="shared_content" data-content-guid="u3420-6_0_content">Volare Ventures Inc.</p>
+                                        <p class="shared_content" data-content-guid="u3420-6_0_content">Volare Ventures
+                                            Inc.</p>
                                         <p class="shared_content" data-content-guid="u3420-6_1_content">★★★★★</p>
                                     </div>
                                     <div class="SSSlideCaption invi clearfix grpelem" id="u3440-7">
                                         <!-- content -->
-                                        <p id="u3440-2" class="shared_content" data-content-guid="u3440-2_content">Kulture Media</p>
-                                        <p id="u3440-4" class="shared_content" data-content-guid="u3440-4_content">★★★★★</p>
+                                        <p id="u3440-2" class="shared_content" data-content-guid="u3440-2_content">
+                                            Kulture Media</p>
+                                        <p id="u3440-4" class="shared_content" data-content-guid="u3440-4_content">★★★★★
+                                        </p>
                                         <p class="shared_content" data-content-guid="u3440-7_2_content">&nbsp;</p>
                                     </div>
                                     <div class="SSSlideCaption invi clearfix grpelem" id="u3460-6">
                                         <!-- content -->
-                                        <p class="shared_content" data-content-guid="u3460-6_0_content">Small Batch Club</p>
+                                        <p class="shared_content" data-content-guid="u3460-6_0_content">Small Batch Club
+                                        </p>
                                         <p class="shared_content" data-content-guid="u3460-6_1_content">★★★★☆</p>
                                     </div>
                                     <div class="SSSlideCaption invi clearfix grpelem" id="u3480-6">
                                         <!-- content -->
-                                        <p class="shared_content" data-content-guid="u3480-6_0_content">Identity Labs</p>
+                                        <p class="shared_content" data-content-guid="u3480-6_0_content">Identity Labs
+                                        </p>
                                         <p class="shared_content" data-content-guid="u3480-6_1_content">★★★★★</p>
                                     </div>
                                     <div class="SSSlideCaption invi clearfix grpelem" id="u3500-6">
                                         <!-- content -->
-                                        <p class="shared_content" data-content-guid="u3500-6_0_content">Sarkar Dwellings Pvt. Ltd.</p>
+                                        <p class="shared_content" data-content-guid="u3500-6_0_content">Sarkar Dwellings
+                                            Pvt. Ltd.</p>
                                         <p class="shared_content" data-content-guid="u3500-6_1_content">★★★★★</p>
                                     </div>
                                     <div class="SSSlideCaption invi clearfix grpelem" id="u3520-7">
                                         <!-- content -->
-                                        <p id="u3520-2" class="shared_content" data-content-guid="u3520-2_content">Wild Love Photos by K.L.</p>
-                                        <p id="u3520-4" class="shared_content" data-content-guid="u3520-4_content">★★★★★</p>
+                                        <p id="u3520-2" class="shared_content" data-content-guid="u3520-2_content">Wild
+                                            Love Photos by K.L.</p>
+                                        <p id="u3520-4" class="shared_content" data-content-guid="u3520-4_content">★★★★★
+                                        </p>
                                         <p class="shared_content" data-content-guid="u3520-7_2_content">&nbsp;</p>
                                     </div>
                                 </div>
                             </div>
                             <div class="popup_anchor" id="u3216-4popup">
-                                <div class="SSPreviousButton rounded-corners normal-next-prev-button shadow clearfix" id="u3216-4">
+                                <div class="SSPreviousButton rounded-corners normal-next-prev-button shadow clearfix"
+                                    id="u3216-4">
                                     <!-- content -->
                                     <p class="shared_content" data-content-guid="u3216-4_0_content">&lt;</p>
                                 </div>
                             </div>
                             <div class="popup_anchor" id="u3214-4popup">
-                                <div class="SSNextButton normal-next-prev-button shadow rounded-corners clearfix" id="u3214-4">
+                                <div class="SSNextButton normal-next-prev-button shadow rounded-corners clearfix"
+                                    id="u3214-4">
                                     <!-- content -->
                                     <p class="shared_content" data-content-guid="u3214-4_0_content">&gt;</p>
                                 </div>
@@ -311,8 +354,10 @@ window['_fs_namespace'] = 'FS';
                         <!-- content -->
                         <h1 id="u7341-2">FULL-STACK WEB DEVELOPER</h1>
                         <p id="u7341-3">&nbsp;</p>
-                        <p id="u7341-5">Other than being capable of transforming ideas into a handcrafted piece of art, I'm known for my great attention to detailing and&nbsp; timeliness.</p>
-                        <p id="u7341-7">Worked on more than 30 projects involving static &amp; dynamic websites and eCommerce stores.</p>
+                        <p id="u7341-5">Other than being capable of transforming ideas into a handcrafted piece of art,
+                            I'm known for my great attention to detailing and&nbsp; timeliness.</p>
+                        <p id="u7341-7">Worked on more than 30 projects involving static &amp; dynamic websites and
+                            eCommerce stores.</p>
                     </div>
                     <div class="clearfix grpelem" id="u8166">
                         <!-- group -->
@@ -332,33 +377,47 @@ window['_fs_namespace'] = 'FS';
                                 <!-- group -->
                                 <div class="clip_frame grpelem" id="u7364">
                                     <!-- image -->
-                                    <img class="block temp_no_img_src" id="u7364_img" data-orig-src="images/2-html.jpg" alt="HTML 5&nbsp; icon" title="HTML" data-image-width="52" data-image-height="52" src="images/blank.gif" />
+                                    <img class="block temp_no_img_src" id="u7364_img" data-orig-src="images/2-html.jpg"
+                                        alt="HTML 5&nbsp; icon" title="HTML" data-image-width="52"
+                                        data-image-height="52" src="images/blank.gif" />
                                 </div>
                                 <div class="clip_frame grpelem" id="u7356">
                                     <!-- image -->
-                                    <img class="block temp_no_img_src" id="u7356_img" data-orig-src="images/2-css.jpg" alt="CSS 3&nbsp; icon" title="CSS" data-image-width="53" data-image-height="53" src="images/blank.gif" />
+                                    <img class="block temp_no_img_src" id="u7356_img" data-orig-src="images/2-css.jpg"
+                                        alt="CSS 3&nbsp; icon" title="CSS" data-image-width="53" data-image-height="53"
+                                        src="images/blank.gif" />
                                 </div>
                                 <div class="clip_frame grpelem" id="u7378">
                                     <!-- image -->
-                                    <img class="block temp_no_img_src" id="u7378_img" data-orig-src="images/2-js.jpg" alt="Javascript icon" title="Javascript" data-image-width="53" data-image-height="53" src="images/blank.gif" />
+                                    <img class="block temp_no_img_src" id="u7378_img" data-orig-src="images/2-js.jpg"
+                                        alt="Javascript icon" title="Javascript" data-image-width="53"
+                                        data-image-height="53" src="images/blank.gif" />
                                 </div>
                             </div>
                         </div>
                         <div class="clip_frame grpelem" id="u7371">
                             <!-- image -->
-                            <img class="block temp_no_img_src" id="u7371_img" data-orig-src="images/2-jquery.jpg" alt="jQuery Icon" title="jQuery" data-image-width="52" data-image-height="52" src="images/blank.gif" />
+                            <img class="block temp_no_img_src" id="u7371_img" data-orig-src="images/2-jquery.jpg"
+                                alt="jQuery Icon" title="jQuery" data-image-width="52" data-image-height="52"
+                                src="images/blank.gif" />
                         </div>
                         <div class="clip_frame grpelem" id="u7392">
                             <!-- image -->
-                            <img class="block temp_no_img_src" id="u7392_img" data-orig-src="images/2-php.jpg" alt="PHP icon" title="PHP" data-image-width="52" data-image-height="52" src="images/blank.gif" />
+                            <img class="block temp_no_img_src" id="u7392_img" data-orig-src="images/2-php.jpg"
+                                alt="PHP icon" title="PHP" data-image-width="52" data-image-height="52"
+                                src="images/blank.gif" />
                         </div>
                         <div class="clip_frame grpelem" id="u7385">
                             <!-- image -->
-                            <img class="block temp_no_img_src" id="u7385_img" data-orig-src="images/2-mysql.jpg" alt="mySql icon" title="mySql" data-image-width="52" data-image-height="52" src="images/blank.gif" />
+                            <img class="block temp_no_img_src" id="u7385_img" data-orig-src="images/2-mysql.jpg"
+                                alt="mySql icon" title="mySql" data-image-width="52" data-image-height="52"
+                                src="images/blank.gif" />
                         </div>
                         <div class="clip_frame grpelem" id="u7399">
                             <!-- image -->
-                            <img class="block temp_no_img_src" id="u7399_img" data-orig-src="images/2-scss.jpg" alt="Scss icon" title="Scss" data-image-width="52" data-image-height="52" src="images/blank.gif" />
+                            <img class="block temp_no_img_src" id="u7399_img" data-orig-src="images/2-scss.jpg"
+                                alt="Scss icon" title="Scss" data-image-width="52" data-image-height="52"
+                                src="images/blank.gif" />
                         </div>
                     </div>
                 </div>
@@ -370,23 +429,39 @@ window['_fs_namespace'] = 'FS';
                             <!-- group -->
                             <div class="clearfix grpelem" id="u2183">
                                 <!-- group -->
-                                <img class="grpelem temp_no_img_src" id="u1202" alt="" data-orig-src="images/cards-u1202.png" data-image-width="522" src="images/blank.gif" />
+                                <img class="grpelem temp_no_img_src" id="u1202" alt=""
+                                    data-orig-src="images/cards-u1202.png" data-image-width="522"
+                                    src="images/blank.gif" />
                                 <!-- rasterized frame -->
                                 <div class="clip_frame grpelem" id="u1212">
                                     <!-- image -->
-                                    <img class="block temp_no_img_src" id="u1212_img" data-orig-src="images/masking-4-2.png" alt="" data-image-width="79" data-image-height="107" src="images/blank.gif" />
+                                    <img class="block temp_no_img_src" id="u1212_img"
+                                        data-orig-src="images/masking-4-2.png" alt="" data-image-width="79"
+                                        data-image-height="107" src="images/blank.gif" />
                                 </div>
-                                <div class="clip_frame grpelem" id="u1231" data-mu-ie-matrix="progid:DXImageTransform.Microsoft.Matrix(M11=-0.9945,M12=-0.1045,M21=0.1045,M22=-0.9945,SizingMethod='auto expand')" data-mu-ie-matrix-dx="-5" data-mu-ie-matrix-dy="-4">
+                                <div class="clip_frame grpelem" id="u1231"
+                                    data-mu-ie-matrix="progid:DXImageTransform.Microsoft.Matrix(M11=-0.9945,M12=-0.1045,M21=0.1045,M22=-0.9945,SizingMethod='auto expand')"
+                                    data-mu-ie-matrix-dx="-5" data-mu-ie-matrix-dy="-4">
                                     <!-- image -->
-                                    <img class="block temp_no_img_src" id="u1231_img" data-orig-src="images/masking-4-2.png" alt="" data-image-width="79" data-image-height="107" src="images/blank.gif" />
+                                    <img class="block temp_no_img_src" id="u1231_img"
+                                        data-orig-src="images/masking-4-2.png" alt="" data-image-width="79"
+                                        data-image-height="107" src="images/blank.gif" />
                                 </div>
-                                <div class="clip_frame grpelem" id="u1245" data-mu-ie-matrix="progid:DXImageTransform.Microsoft.Matrix(M11=-0.2079,M12=0.9781,M21=-0.9781,M22=-0.2079,SizingMethod='auto expand')" data-mu-ie-matrix-dx="-21" data-mu-ie-matrix-dy="4">
+                                <div class="clip_frame grpelem" id="u1245"
+                                    data-mu-ie-matrix="progid:DXImageTransform.Microsoft.Matrix(M11=-0.2079,M12=0.9781,M21=-0.9781,M22=-0.2079,SizingMethod='auto expand')"
+                                    data-mu-ie-matrix-dx="-21" data-mu-ie-matrix-dy="4">
                                     <!-- image -->
-                                    <img class="block temp_no_img_src" id="u1245_img" data-orig-src="images/masking-4-2.png" alt="" data-image-width="79" data-image-height="107" src="images/blank.gif" />
+                                    <img class="block temp_no_img_src" id="u1245_img"
+                                        data-orig-src="images/masking-4-2.png" alt="" data-image-width="79"
+                                        data-image-height="107" src="images/blank.gif" />
                                 </div>
-                                <div class="clip_frame grpelem" id="u1252" data-mu-ie-matrix="progid:DXImageTransform.Microsoft.Matrix(M11=0.1045,M12=-0.9945,M21=0.9945,M22=0.1045,SizingMethod='auto expand')" data-mu-ie-matrix-dx="-18" data-mu-ie-matrix-dy="9">
+                                <div class="clip_frame grpelem" id="u1252"
+                                    data-mu-ie-matrix="progid:DXImageTransform.Microsoft.Matrix(M11=0.1045,M12=-0.9945,M21=0.9945,M22=0.1045,SizingMethod='auto expand')"
+                                    data-mu-ie-matrix-dx="-18" data-mu-ie-matrix-dy="9">
                                     <!-- image -->
-                                    <img class="block temp_no_img_src" id="u1252_img" data-orig-src="images/masking-4-2.png" alt="" data-image-width="79" data-image-height="107" src="images/blank.gif" />
+                                    <img class="block temp_no_img_src" id="u1252_img"
+                                        data-orig-src="images/masking-4-2.png" alt="" data-image-width="79"
+                                        data-image-height="107" src="images/blank.gif" />
                                 </div>
                             </div>
                             <div class="SlideShowWidget clearfix grpelem" id="slideshowu2229">
@@ -396,78 +471,112 @@ window['_fs_namespace'] = 'FS';
                                         <!-- stack box -->
                                         <div class="SSSlide clip_frame grpelem" id="u2233">
                                             <!-- image -->
-                                            <img class="block ImageInclude" id="u2233_img" data-src="images/siwalikin_logos_siwalik_mukherjee%20(1).png" src="images/blank.gif" alt="" data-width="289" data-height="285" />
+                                            <img class="block ImageInclude" id="u2233_img"
+                                                data-src="images/siwalikin_logos_siwalik_mukherjee%20(1).png"
+                                                src="images/blank.gif" alt="" data-width="289" data-height="285" />
                                         </div>
                                         <div class="SSSlide invi clip_frame grpelem" id="u2381">
                                             <!-- image -->
-                                            <img class="block ImageInclude" id="u2381_img" data-src="images/siwalikin_logos_siwalik_mukherjee%20(2).png" src="images/blank.gif" alt="" data-width="289" data-height="285" />
+                                            <img class="block ImageInclude" id="u2381_img"
+                                                data-src="images/siwalikin_logos_siwalik_mukherjee%20(2).png"
+                                                src="images/blank.gif" alt="" data-width="289" data-height="285" />
                                         </div>
                                         <div class="SSSlide invi clip_frame grpelem" id="u2401">
                                             <!-- image -->
-                                            <img class="block ImageInclude" id="u2401_img" data-src="images/siwalikin_logos_siwalik_mukherjee%20(3).png" src="images/blank.gif" alt="" data-width="289" data-height="285" />
+                                            <img class="block ImageInclude" id="u2401_img"
+                                                data-src="images/siwalikin_logos_siwalik_mukherjee%20(3).png"
+                                                src="images/blank.gif" alt="" data-width="289" data-height="285" />
                                         </div>
                                         <div class="SSSlide invi clip_frame grpelem" id="u2421">
                                             <!-- image -->
-                                            <img class="block ImageInclude" id="u2421_img" data-src="images/siwalikin_logos_siwalik_mukherjee%20(4).png" src="images/blank.gif" alt="" data-width="289" data-height="285" />
+                                            <img class="block ImageInclude" id="u2421_img"
+                                                data-src="images/siwalikin_logos_siwalik_mukherjee%20(4).png"
+                                                src="images/blank.gif" alt="" data-width="289" data-height="285" />
                                         </div>
                                         <div class="SSSlide invi clip_frame grpelem" id="u2441">
                                             <!-- image -->
-                                            <img class="block ImageInclude" id="u2441_img" data-src="images/siwalikin_logos_siwalik_mukherjee%20(5).png" src="images/blank.gif" alt="" data-width="289" data-height="285" />
+                                            <img class="block ImageInclude" id="u2441_img"
+                                                data-src="images/siwalikin_logos_siwalik_mukherjee%20(5).png"
+                                                src="images/blank.gif" alt="" data-width="289" data-height="285" />
                                         </div>
                                         <div class="SSSlide invi clip_frame grpelem" id="u3592">
                                             <!-- image -->
-                                            <img class="block ImageInclude" id="u3592_img" data-src="images/siwalikin_logos_siwalik_mukherjee%20(16).png" src="images/blank.gif" alt="" data-width="301" data-height="296" />
+                                            <img class="block ImageInclude" id="u3592_img"
+                                                data-src="images/siwalikin_logos_siwalik_mukherjee%20(16).png"
+                                                src="images/blank.gif" alt="" data-width="301" data-height="296" />
                                         </div>
                                         <div class="SSSlide invi clip_frame grpelem" id="u2461">
                                             <!-- image -->
-                                            <img class="block ImageInclude" id="u2461_img" data-src="images/siwalikin_logos_siwalik_mukherjee%20(6).png" src="images/blank.gif" alt="" data-width="289" data-height="285" />
+                                            <img class="block ImageInclude" id="u2461_img"
+                                                data-src="images/siwalikin_logos_siwalik_mukherjee%20(6).png"
+                                                src="images/blank.gif" alt="" data-width="289" data-height="285" />
                                         </div>
                                         <div class="SSSlide invi clip_frame grpelem" id="u2481">
                                             <!-- image -->
-                                            <img class="block ImageInclude" id="u2481_img" data-src="images/siwalikin_logos_siwalik_mukherjee%20(7).png" src="images/blank.gif" alt="" data-width="289" data-height="285" />
+                                            <img class="block ImageInclude" id="u2481_img"
+                                                data-src="images/siwalikin_logos_siwalik_mukherjee%20(7).png"
+                                                src="images/blank.gif" alt="" data-width="289" data-height="285" />
                                         </div>
                                         <div class="SSSlide invi clip_frame grpelem" id="u2501">
                                             <!-- image -->
-                                            <img class="block ImageInclude" id="u2501_img" data-src="images/siwalikin_logos_siwalik_mukherjee%20(8).png" src="images/blank.gif" alt="" data-width="289" data-height="285" />
+                                            <img class="block ImageInclude" id="u2501_img"
+                                                data-src="images/siwalikin_logos_siwalik_mukherjee%20(8).png"
+                                                src="images/blank.gif" alt="" data-width="289" data-height="285" />
                                         </div>
                                         <div class="SSSlide invi clip_frame grpelem" id="u2521">
                                             <!-- image -->
-                                            <img class="block ImageInclude" id="u2521_img" data-src="images/siwalikin_logos_siwalik_mukherjee%20(9).png" src="images/blank.gif" alt="" data-width="289" data-height="285" />
+                                            <img class="block ImageInclude" id="u2521_img"
+                                                data-src="images/siwalikin_logos_siwalik_mukherjee%20(9).png"
+                                                src="images/blank.gif" alt="" data-width="289" data-height="285" />
                                         </div>
                                         <div class="SSSlide invi clip_frame grpelem" id="u2541">
                                             <!-- image -->
-                                            <img class="block ImageInclude" id="u2541_img" data-src="images/siwalikin_logos_siwalik_mukherjee%20(10).png" src="images/blank.gif" alt="" data-width="289" data-height="285" />
+                                            <img class="block ImageInclude" id="u2541_img"
+                                                data-src="images/siwalikin_logos_siwalik_mukherjee%20(10).png"
+                                                src="images/blank.gif" alt="" data-width="289" data-height="285" />
                                         </div>
                                         <div class="SSSlide invi clip_frame grpelem" id="u2561">
                                             <!-- image -->
-                                            <img class="block ImageInclude" id="u2561_img" data-src="images/siwalikin_logos_siwalik_mukherjee%20(11).png" src="images/blank.gif" alt="" data-width="289" data-height="285" />
+                                            <img class="block ImageInclude" id="u2561_img"
+                                                data-src="images/siwalikin_logos_siwalik_mukherjee%20(11).png"
+                                                src="images/blank.gif" alt="" data-width="289" data-height="285" />
                                         </div>
                                         <div class="SSSlide invi clip_frame grpelem" id="u2581">
                                             <!-- image -->
-                                            <img class="block ImageInclude" id="u2581_img" data-src="images/siwalikin_logos_siwalik_mukherjee%20(12).png" src="images/blank.gif" alt="" data-width="289" data-height="285" />
+                                            <img class="block ImageInclude" id="u2581_img"
+                                                data-src="images/siwalikin_logos_siwalik_mukherjee%20(12).png"
+                                                src="images/blank.gif" alt="" data-width="289" data-height="285" />
                                         </div>
                                         <div class="SSSlide invi clip_frame grpelem" id="u2601">
                                             <!-- image -->
-                                            <img class="block ImageInclude" id="u2601_img" data-src="images/siwalikin_logos_siwalik_mukherjee%20(13).png" src="images/blank.gif" alt="" data-width="289" data-height="285" />
+                                            <img class="block ImageInclude" id="u2601_img"
+                                                data-src="images/siwalikin_logos_siwalik_mukherjee%20(13).png"
+                                                src="images/blank.gif" alt="" data-width="289" data-height="285" />
                                         </div>
                                         <div class="SSSlide invi clip_frame grpelem" id="u2621">
                                             <!-- image -->
-                                            <img class="block ImageInclude" id="u2621_img" data-src="images/siwalikin_logos_siwalik_mukherjee%20(14).png" src="images/blank.gif" alt="" data-width="289" data-height="285" />
+                                            <img class="block ImageInclude" id="u2621_img"
+                                                data-src="images/siwalikin_logos_siwalik_mukherjee%20(14).png"
+                                                src="images/blank.gif" alt="" data-width="289" data-height="285" />
                                         </div>
                                         <div class="SSSlide invi clip_frame grpelem" id="u2641">
                                             <!-- image -->
-                                            <img class="block ImageInclude" id="u2641_img" data-src="images/siwalikin_logos_siwalik_mukherjee%20(15).png" src="images/blank.gif" alt="" data-width="289" data-height="285" />
+                                            <img class="block ImageInclude" id="u2641_img"
+                                                data-src="images/siwalikin_logos_siwalik_mukherjee%20(15).png"
+                                                src="images/blank.gif" alt="" data-width="289" data-height="285" />
                                         </div>
                                     </div>
                                 </div>
                                 <div class="popup_anchor" id="u2241-4popup">
-                                    <div class="SSPreviousButton normal-next-prev-button shadow rounded-corners clearfix" id="u2241-4">
+                                    <div class="SSPreviousButton normal-next-prev-button shadow rounded-corners clearfix"
+                                        id="u2241-4">
                                         <!-- content -->
                                         <p class="shared_content" data-content-guid="u2241-4_0_content">&lt;</p>
                                     </div>
                                 </div>
                                 <div class="popup_anchor" id="u2239-4popup">
-                                    <div class="SSNextButton normal-next-prev-button shadow rounded-corners clearfix" id="u2239-4">
+                                    <div class="SSNextButton normal-next-prev-button shadow rounded-corners clearfix"
+                                        id="u2239-4">
                                         <!-- content -->
                                         <p class="shared_content" data-content-guid="u2239-4_0_content">&gt;</p>
                                     </div>
@@ -476,11 +585,14 @@ window['_fs_namespace'] = 'FS';
                         </div>
                         <div class="clearfix grpelem" id="pu2172-7">
                             <!-- column -->
-                            <div class="clearfix colelem shared_content" id="u2172-7" data-content-guid="u2172-7_content">
+                            <div class="clearfix colelem shared_content" id="u2172-7"
+                                data-content-guid="u2172-7_content">
                                 <!-- content -->
                                 <h2 id="u2172-2">LOGO DESIGNER</h2>
                                 <p id="u2172-3">&nbsp;</p>
-                                <p id="u2172-5">A great design is the beginning of everything.&nbsp; I strive on two things while designing logos, simplicity and clarity. After worked on more than 50 projects, these are the ones I love the most.</p>
+                                <p id="u2172-5">A great design is the beginning of everything.&nbsp; I strive on two
+                                    things while designing logos, simplicity and clarity. After worked on more than 50
+                                    projects, these are the ones I love the most.</p>
                             </div>
                             <div class="colelem shared_content" id="u6942" data-content-guid="u6942_content">
                                 <!-- simple frame -->
@@ -489,11 +601,15 @@ window['_fs_namespace'] = 'FS';
                                 <!-- group -->
                                 <div class="clip_frame grpelem" id="u6956">
                                     <!-- image -->
-                                    <img class="block temp_no_img_src" id="u6956_img" data-orig-src="images/1-ps.jpg" alt="Photoshop icon" title="Photoshop" data-image-width="50" data-image-height="50" src="images/blank.gif" />
+                                    <img class="block temp_no_img_src" id="u6956_img" data-orig-src="images/1-ps.jpg"
+                                        alt="Photoshop icon" title="Photoshop" data-image-width="50"
+                                        data-image-height="50" src="images/blank.gif" />
                                 </div>
                                 <div class="clip_frame grpelem" id="u6948">
                                     <!-- image -->
-                                    <img class="block temp_no_img_src" id="u6948_img" data-orig-src="images/1-ai.jpg" alt="Illustrator icon" title="Illustrator" data-image-width="51" data-image-height="51" src="images/blank.gif" />
+                                    <img class="block temp_no_img_src" id="u6948_img" data-orig-src="images/1-ai.jpg"
+                                        alt="Illustrator icon" title="Illustrator" data-image-width="51"
+                                        data-image-height="51" src="images/blank.gif" />
                                 </div>
                             </div>
                         </div>
@@ -511,7 +627,9 @@ window['_fs_namespace'] = 'FS';
                             <!-- content -->
                             <h2 id="u7426-2">HYBRID APP DEVELOPER</h2>
                             <p id="u7426-3">&nbsp;</p>
-                            <p id="u7426-5">I've also been building hybrid mobile apps for Android, IOS and Windows platforms. Most recently I've built the official app for the Hon'ble Karnataka High Court, India.</p>
+                            <p id="u7426-5">I've also been building hybrid mobile apps for Android, IOS and Windows
+                                platforms. Most recently I've built the official app for the Hon'ble Karnataka High
+                                Court, India.</p>
                         </div>
                         <div class="clearfix colelem shared_content" id="u8206-4" data-content-guid="u8206-4_content">
                             <!-- content -->
@@ -525,20 +643,25 @@ window['_fs_namespace'] = 'FS';
                         </div>
                         <div class="clip_frame colelem" id="u7448">
                             <!-- image -->
-                            <img class="block temp_no_img_src" id="u7448_img" data-orig-src="images/3-cordova.jpg" alt="Cordova icon" title="Cordova" data-image-width="51" data-image-height="51" src="images/blank.gif" />
+                            <img class="block temp_no_img_src" id="u7448_img" data-orig-src="images/3-cordova.jpg"
+                                alt="Cordova icon" title="Cordova" data-image-width="51" data-image-height="51"
+                                src="images/blank.gif" />
                         </div>
                     </div>
                     <div class="clearfix grpelem" id="u8865">
                         <!-- group -->
                         <div class="clip_frame grpelem" id="u8855">
                             <!-- image -->
-                            <img class="block temp_no_img_src" id="u8855_img" data-orig-src="images/iphone6plus_spacegrey_portrait.png" alt="" data-image-width="219" data-image-height="440" src="images/blank.gif" />
+                            <img class="block temp_no_img_src" id="u8855_img"
+                                data-orig-src="images/iphone6plus_spacegrey_portrait.png" alt="" data-image-width="219"
+                                data-image-height="440" src="images/blank.gif" />
                         </div>
                         <div class="clearfix grpelem" id="u7793">
                             <!-- group -->
                             <div class="clip_frame grpelem" id="u7470">
                                 <!-- image -->
-                                <img class="block temp_no_img_src" id="u7470_img" data-orig-src="images/court-app.gif" alt="" data-image-width="193" data-image-height="354" src="images/blank.gif" />
+                                <img class="block temp_no_img_src" id="u7470_img" data-orig-src="images/court-app.gif"
+                                    alt="" data-image-width="193" data-image-height="354" src="images/blank.gif" />
                             </div>
                         </div>
                     </div>
@@ -549,7 +672,8 @@ window['_fs_namespace'] = 'FS';
                         <!-- group -->
                         <div class="clip_frame grpelem" id="u6968">
                             <!-- image -->
-                            <img class="block temp_no_img_src" id="u6968_img" data-orig-src="images/scrapbook1.png" alt="" data-image-width="585" data-image-height="380" src="images/blank.gif" />
+                            <img class="block temp_no_img_src" id="u6968_img" data-orig-src="images/scrapbook1.png"
+                                alt="" data-image-width="585" data-image-height="380" src="images/blank.gif" />
                         </div>
                         <div class="SlideShowWidget clearfix grpelem" id="slideshowu6978">
                             <!-- none box -->
@@ -558,62 +682,88 @@ window['_fs_namespace'] = 'FS';
                                     <!-- stack box -->
                                     <div class="SSSlide clip_frame clearfix grpelem" id="u6989">
                                         <!-- image -->
-                                        <img class="ImageInclude position_content" id="u6989_img" data-src="images/siwalikin_siwalik_mukherjee_sketches__0000_sketch-_0006_layer-6.png" src="images/blank.gif" alt="" data-width="585" data-height="381" />
+                                        <img class="ImageInclude position_content" id="u6989_img"
+                                            data-src="images/siwalikin_siwalik_mukherjee_sketches__0000_sketch-_0006_layer-6.png"
+                                            src="images/blank.gif" alt="" data-width="585" data-height="381" />
                                     </div>
                                     <div class="SSSlide invi clip_frame clearfix grpelem" id="u7109">
                                         <!-- image -->
-                                        <img class="ImageInclude position_content" id="u7109_img" data-src="images/siwalikin_siwalik_mukherjee_sketches__0001_layer-11.png" src="images/blank.gif" alt="" data-width="585" data-height="381" />
+                                        <img class="ImageInclude position_content" id="u7109_img"
+                                            data-src="images/siwalikin_siwalik_mukherjee_sketches__0001_layer-11.png"
+                                            src="images/blank.gif" alt="" data-width="585" data-height="381" />
                                     </div>
                                     <div class="SSSlide invi clip_frame clearfix grpelem" id="u7129">
                                         <!-- image -->
-                                        <img class="ImageInclude position_content" id="u7129_img" data-src="images/siwalikin_siwalik_mukherjee_sketches__0002_layer-10.png" src="images/blank.gif" alt="" data-width="585" data-height="381" />
+                                        <img class="ImageInclude position_content" id="u7129_img"
+                                            data-src="images/siwalikin_siwalik_mukherjee_sketches__0002_layer-10.png"
+                                            src="images/blank.gif" alt="" data-width="585" data-height="381" />
                                     </div>
                                     <div class="SSSlide invi clip_frame clearfix grpelem" id="u7149">
                                         <!-- image -->
-                                        <img class="ImageInclude position_content" id="u7149_img" data-src="images/siwalikin_siwalik_mukherjee_sketches__0003_sketch-_0003_layer-8.png" src="images/blank.gif" alt="" data-width="585" data-height="381" />
+                                        <img class="ImageInclude position_content" id="u7149_img"
+                                            data-src="images/siwalikin_siwalik_mukherjee_sketches__0003_sketch-_0003_layer-8.png"
+                                            src="images/blank.gif" alt="" data-width="585" data-height="381" />
                                     </div>
                                     <div class="SSSlide invi clip_frame clearfix grpelem" id="u7169">
                                         <!-- image -->
-                                        <img class="ImageInclude position_content" id="u7169_img" data-src="images/siwalikin_siwalik_mukherjee_sketches__0004_sketch-_0000_layer-14.png" src="images/blank.gif" alt="" data-width="585" data-height="381" />
+                                        <img class="ImageInclude position_content" id="u7169_img"
+                                            data-src="images/siwalikin_siwalik_mukherjee_sketches__0004_sketch-_0000_layer-14.png"
+                                            src="images/blank.gif" alt="" data-width="585" data-height="381" />
                                     </div>
                                     <div class="SSSlide invi clip_frame clearfix grpelem" id="u7189">
                                         <!-- image -->
-                                        <img class="ImageInclude position_content" id="u7189_img" data-src="images/siwalikin_siwalik_mukherjee_sketches__0005_sketch-_0001_layer-13.png" src="images/blank.gif" alt="" data-width="585" data-height="381" />
+                                        <img class="ImageInclude position_content" id="u7189_img"
+                                            data-src="images/siwalikin_siwalik_mukherjee_sketches__0005_sketch-_0001_layer-13.png"
+                                            src="images/blank.gif" alt="" data-width="585" data-height="381" />
                                     </div>
                                     <div class="SSSlide invi clip_frame clearfix grpelem" id="u7209">
                                         <!-- image -->
-                                        <img class="ImageInclude position_content" id="u7209_img" data-src="images/siwalikin_siwalik_mukherjee_sketches__0006_layer-9.png" src="images/blank.gif" alt="" data-width="585" data-height="380" />
+                                        <img class="ImageInclude position_content" id="u7209_img"
+                                            data-src="images/siwalikin_siwalik_mukherjee_sketches__0006_layer-9.png"
+                                            src="images/blank.gif" alt="" data-width="585" data-height="380" />
                                     </div>
                                     <div class="SSSlide invi clip_frame clearfix grpelem" id="u7229">
                                         <!-- image -->
-                                        <img class="ImageInclude position_content" id="u7229_img" data-src="images/siwalikin_siwalik_mukherjee_sketches__0007_layer-7.png" src="images/blank.gif" alt="" data-width="585" data-height="381" />
+                                        <img class="ImageInclude position_content" id="u7229_img"
+                                            data-src="images/siwalikin_siwalik_mukherjee_sketches__0007_layer-7.png"
+                                            src="images/blank.gif" alt="" data-width="585" data-height="381" />
                                     </div>
                                     <div class="SSSlide invi clip_frame clearfix grpelem" id="u7249">
                                         <!-- image -->
-                                        <img class="ImageInclude position_content" id="u7249_img" data-src="images/siwalikin_siwalik_mukherjee_sketches__0008_layer-8.png" src="images/blank.gif" alt="" data-width="585" data-height="381" />
+                                        <img class="ImageInclude position_content" id="u7249_img"
+                                            data-src="images/siwalikin_siwalik_mukherjee_sketches__0008_layer-8.png"
+                                            src="images/blank.gif" alt="" data-width="585" data-height="381" />
                                     </div>
                                     <div class="SSSlide invi clip_frame clearfix grpelem" id="u7269">
                                         <!-- image -->
-                                        <img class="ImageInclude position_content" id="u7269_img" data-src="images/siwalikin_siwalik_mukherjee_sketches__0009_sketch-_0002_layer-11.png" src="images/blank.gif" alt="" data-width="585" data-height="381" />
+                                        <img class="ImageInclude position_content" id="u7269_img"
+                                            data-src="images/siwalikin_siwalik_mukherjee_sketches__0009_sketch-_0002_layer-11.png"
+                                            src="images/blank.gif" alt="" data-width="585" data-height="381" />
                                     </div>
                                     <div class="SSSlide invi clip_frame clearfix grpelem" id="u7289">
                                         <!-- image -->
-                                        <img class="ImageInclude position_content" id="u7289_img" data-src="images/siwalikin_siwalik_mukherjee_sketches__0010_layer-4.png" src="images/blank.gif" alt="" data-width="585" data-height="380" />
+                                        <img class="ImageInclude position_content" id="u7289_img"
+                                            data-src="images/siwalikin_siwalik_mukherjee_sketches__0010_layer-4.png"
+                                            src="images/blank.gif" alt="" data-width="585" data-height="380" />
                                     </div>
                                     <div class="SSSlide invi clip_frame clearfix grpelem" id="u7309">
                                         <!-- image -->
-                                        <img class="ImageInclude position_content" id="u7309_img" data-src="images/siwalikin_siwalik_mukherjee_sketches__0011_layer-3.png" src="images/blank.gif" alt="" data-width="585" data-height="380" />
+                                        <img class="ImageInclude position_content" id="u7309_img"
+                                            data-src="images/siwalikin_siwalik_mukherjee_sketches__0011_layer-3.png"
+                                            src="images/blank.gif" alt="" data-width="585" data-height="380" />
                                     </div>
                                 </div>
                             </div>
                             <div class="popup_anchor" id="u6984-4popup">
-                                <div class="SSPreviousButton normal-next-prev-button shadow rounded-corners clearfix" id="u6984-4">
+                                <div class="SSPreviousButton normal-next-prev-button shadow rounded-corners clearfix"
+                                    id="u6984-4">
                                     <!-- content -->
                                     <p class="shared_content" data-content-guid="u6984-4_0_content">&lt;</p>
                                 </div>
                             </div>
                             <div class="popup_anchor" id="u6982-4popup">
-                                <div class="SSNextButton normal-next-prev-button shadow rounded-corners clearfix" id="u6982-4">
+                                <div class="SSNextButton normal-next-prev-button shadow rounded-corners clearfix"
+                                    id="u6982-4">
                                     <!-- content -->
                                     <p class="shared_content" data-content-guid="u6982-4_0_content">&gt;</p>
                                 </div>
@@ -626,7 +776,8 @@ window['_fs_namespace'] = 'FS';
                         <p id="u7332-3">&nbsp;</p>
                         <p id="u7332-5">An avid artist since childhood!</p>
                         <p id="u7332-7">I do sketches, monochrome paintings, doodles and portraits.</p>
-                        <p id="u7332-9">I've recently started my journey on digital painting and illustrations as-well! It has been pretty exciting so far!</p>
+                        <p id="u7332-9">I've recently started my journey on digital painting and illustrations as-well!
+                            It has been pretty exciting so far!</p>
                     </div>
                 </div>
                 <div class="clearfix colelem" id="pu8162">
@@ -635,19 +786,29 @@ window['_fs_namespace'] = 'FS';
                         <!-- column -->
                         <div class="clearfix colelem" id="pu7781-15">
                             <!-- group -->
-                            <div class="clearfix grpelem shared_content" id="u7781-15" data-content-guid="u7781-15_content">
+                            <div class="clearfix grpelem shared_content" id="u7781-15"
+                                data-content-guid="u7781-15_content">
                                 <!-- content -->
                                 <h2 id="u7781-2">AWARD</h2>
                                 <p id="u7781-3">&nbsp;</p>
-                                <p id="u7781-7">As a part of my final year engineering project, created a Gesture based Data Transfer Application called VICINITY which also won the first prize in the National Project Expo 2016.
-                                    <br/>
-                                    <br/>
+                                <p id="u7781-7">As a part of my final year engineering project, created a Gesture based
+                                    Data Transfer Application called VICINITY which also won the first prize in the
+                                    National Project Expo 2016.
+                                    <br />
+                                    <br />
                                 </p>
-                                <p id="u7781-13">The project is made open-source and is hosted on GitHub <span title="GihHub link for Vicinity">(</span><a class="nonblock" href="https://github.com/siwalikm/Vicinity" target="_blank" title="GihHub link for Vicinity">link</a><span title="GihHub link for Vicinity">).</span></p>
+                                <p id="u7781-13">The project is made open-source and is hosted on GitHub <span
+                                        title="GihHub link for Vicinity">(</span><a class="nonblock"
+                                        href="https://github.com/siwalikm/Vicinity" target="_blank"
+                                        title="GihHub link for Vicinity">link</a><span
+                                        title="GihHub link for Vicinity">).</span></p>
                             </div>
                             <div class="clip_frame grpelem" id="u7784">
                                 <!-- image -->
-                                <img class="block temp_no_img_src" id="u7784_img" data-orig-src="images/gesture-.gif" alt="vicinity gesture controlled data transfer siwalik mukherjee anubhav arukia yash parikh siwalik.in" title="Briefly that's what you can do with Vicinity!" data-image-width="533" data-image-height="299" src="images/blank.gif" />
+                                <img class="block temp_no_img_src" id="u7784_img" data-orig-src="images/gesture-.gif"
+                                    alt="vicinity gesture controlled data transfer siwalik mukherjee anubhav arukia yash parikh siwalik.in"
+                                    title="Briefly that's what you can do with Vicinity!" data-image-width="533"
+                                    data-image-height="299" src="images/blank.gif" />
                             </div>
                         </div>
                         <div class="clearfix colelem shared_content" id="u7796" data-content-guid="u7796_content">
@@ -658,7 +819,9 @@ window['_fs_namespace'] = 'FS';
                         </div>
                         <div class="clip_frame colelem" id="u7799">
                             <!-- image -->
-                            <img class="block temp_no_img_src" id="u7799_img" data-orig-src="images/4-pyrhon.jpg" alt="Python icon" title="Python" data-image-width="50" data-image-height="50" src="images/blank.gif" />
+                            <img class="block temp_no_img_src" id="u7799_img" data-orig-src="images/4-pyrhon.jpg"
+                                alt="Python icon" title="Python" data-image-width="50" data-image-height="50"
+                                src="images/blank.gif" />
                         </div>
                     </div>
                     <div class="clearfix grpelem shared_content" id="u8209-4" data-content-guid="u8209-4_content">
@@ -727,18 +890,30 @@ window['_fs_namespace'] = 'FS';
                                 <!-- stack box -->
                                 <div class="Container clearfix grpelem" id="u7823">
                                     <!-- group -->
-                                    <div class="clearfix grpelem shared_content" id="u7871-7" data-content-guid="u7871-7_content">
+                                    <div class="clearfix grpelem shared_content" id="u7871-7"
+                                        data-content-guid="u7871-7_content">
                                         <!-- content -->
-                                        <p>“Siwalik was very instrumental in getting my site www.smallbatchclub.com up and running. He was able to begin with minimal direction and was able to fill in any gaps in my requirements. His english is superb and I was especially impressed at his eye for design. I thought I knew what I wanted design-wise, but he was able to take my concept and really take it to a new level. He is extremely talented and as good as anybody on my US development team.”</p>
+                                        <p>“Siwalik was very instrumental in getting my site www.smallbatchclub.com up
+                                            and running. He was able to begin with minimal direction and was able to
+                                            fill in any gaps in my requirements. His english is superb and I was
+                                            especially impressed at his eye for design. I thought I knew what I wanted
+                                            design-wise, but he was able to take my concept and really take it to a new
+                                            level. He is extremely talented and as good as anybody on my US development
+                                            team.”</p>
                                         <p>&nbsp;</p>
                                         <p>-takhoor</p>
                                     </div>
                                 </div>
                                 <div class="Container invi clearfix grpelem" id="u7877">
                                     <!-- group -->
-                                    <div class="clearfix grpelem shared_content" id="u7882-8" data-content-guid="u7882-8_content">
+                                    <div class="clearfix grpelem shared_content" id="u7882-8"
+                                        data-content-guid="u7882-8_content">
                                         <!-- content -->
-                                        <p id="u7882-2"><span id="u7882">“I have been working with Siwalik for several jobs now and he is very efficient, easy to work with and open to suggestions. I will be working with him in the future on several different projects. Thanks for all your hard work and extended efforts with this project! The customers are very satisfied! ”</span></p>
+                                        <p id="u7882-2"><span id="u7882">“I have been working with Siwalik for several
+                                                jobs now and he is very efficient, easy to work with and open to
+                                                suggestions. I will be working with him in the future on several
+                                                different projects. Thanks for all your hard work and extended efforts
+                                                with this project! The customers are very satisfied! ”</span></p>
                                         <p id="u7882-3">&nbsp;</p>
                                         <p id="u7882-5">-angeliej</p>
                                         <p>&nbsp;</p>
@@ -746,9 +921,13 @@ window['_fs_namespace'] = 'FS';
                                 </div>
                                 <div class="Container invi clearfix grpelem" id="u7888">
                                     <!-- group -->
-                                    <div class="clearfix grpelem shared_content" id="u7893-8" data-content-guid="u7893-8_content">
+                                    <div class="clearfix grpelem shared_content" id="u7893-8"
+                                        data-content-guid="u7893-8_content">
                                         <!-- content -->
-                                        <p id="u7893-2"><span id="u7893">“A true professional. Kept in constant contact and assured me every step along that way that it would be completed correctly, professionally, and timely. He far exceeded my expectations.”</span></p>
+                                        <p id="u7893-2"><span id="u7893">“A true professional. Kept in constant contact
+                                                and assured me every step along that way that it would be completed
+                                                correctly, professionally, and timely. He far exceeded my
+                                                expectations.”</span></p>
                                         <p id="u7893-3">&nbsp;</p>
                                         <p id="u7893-5">-rwilbanks5hs7</p>
                                         <p>&nbsp;</p>
@@ -756,11 +935,14 @@ window['_fs_namespace'] = 'FS';
                                 </div>
                                 <div class="Container invi clearfix grpelem" id="u7899">
                                     <!-- group -->
-                                    <div class="clearfix grpelem shared_content" id="u7904-11" data-content-guid="u7904-11_content">
+                                    <div class="clearfix grpelem shared_content" id="u7904-11"
+                                        data-content-guid="u7904-11_content">
                                         <!-- content -->
-                                        <p id="u7904-2"><span id="u7904">“Siwalik was super fast and got done everything I wanted on my website.</span></p>
+                                        <p id="u7904-2"><span id="u7904">“Siwalik was super fast and got done everything
+                                                I wanted on my website.</span></p>
                                         <p id="u7904-3">&nbsp;</p>
-                                        <p id="u7904-5"><span id="u7904-4">I will definitely be working with him again. Thank you!”</span></p>
+                                        <p id="u7904-5"><span id="u7904-4">I will definitely be working with him again.
+                                                Thank you!”</span></p>
                                         <p id="u7904-6">&nbsp;</p>
                                         <p id="u7904-8">-kgrahn</p>
                                         <p>&nbsp;</p>
@@ -768,9 +950,16 @@ window['_fs_namespace'] = 'FS';
                                 </div>
                                 <div class="Container invi clearfix grpelem" id="u7910">
                                     <!-- group -->
-                                    <div class="clearfix grpelem shared_content" id="u7915-8" data-content-guid="u7915-8_content">
+                                    <div class="clearfix grpelem shared_content" id="u7915-8"
+                                        data-content-guid="u7915-8_content">
                                         <!-- content -->
-                                        <p id="u7915-2"><span id="u7915">“Siwalik was a joy to work with! He offered many suggestions on how I could improve my web page, and he was always quick to implement new ideas we had agreed upon. His expertise in HTML was refreshing, and I am very pleased with how my webpage both looks and functions. It is also organized well by content, which is exactly what I was hoping for. I will definitely hire Siwalik for future jobs. Thank you sir for a job well done!”</span></p>
+                                        <p id="u7915-2"><span id="u7915">“Siwalik was a joy to work with! He offered
+                                                many suggestions on how I could improve my web page, and he was always
+                                                quick to implement new ideas we had agreed upon. His expertise in HTML
+                                                was refreshing, and I am very pleased with how my webpage both looks and
+                                                functions. It is also organized well by content, which is exactly what I
+                                                was hoping for. I will definitely hire Siwalik for future jobs. Thank
+                                                you sir for a job well done!”</span></p>
                                         <p id="u7915-3">&nbsp;</p>
                                         <p id="u7915-5">-bearerofchrist35</p>
                                         <p>&nbsp;</p>
@@ -778,18 +967,29 @@ window['_fs_namespace'] = 'FS';
                                 </div>
                                 <div class="Container invi clearfix grpelem" id="u7921">
                                     <!-- group -->
-                                    <div class="clearfix grpelem shared_content" id="u7926-7" data-content-guid="u7926-7_content">
+                                    <div class="clearfix grpelem shared_content" id="u7926-7"
+                                        data-content-guid="u7926-7_content">
                                         <!-- content -->
-                                        <p><span id="u7926">“Siwalik is so great at what he does. He is super fast and has solid expertise in designing websites. I will use him again and again in the future because I know he will be responsive and timely in everything he does. I have now hired him twice to work on my website. Thank you so much Siwalik! You saved me a ton of time and effort in designing my website. ”</span></p>
+                                        <p><span id="u7926">“Siwalik is so great at what he does. He is super fast and
+                                                has solid expertise in designing websites. I will use him again and
+                                                again in the future because I know he will be responsive and timely in
+                                                everything he does. I have now hired him twice to work on my website.
+                                                Thank you so much Siwalik! You saved me a ton of time and effort in
+                                                designing my website. ”</span></p>
                                         <p>&nbsp;</p>
                                         <p><span id="u7926-4">-kgrahn</span></p>
                                     </div>
                                 </div>
                                 <div class="Container invi clearfix grpelem" id="u7932">
                                     <!-- group -->
-                                    <div class="clearfix grpelem shared_content" id="u7937-8" data-content-guid="u7937-8_content">
+                                    <div class="clearfix grpelem shared_content" id="u7937-8"
+                                        data-content-guid="u7937-8_content">
                                         <!-- content -->
-                                        <p id="u7937-2"><span id="u7937">“Siwalik has completed yet another project! Very quick and always goes above and beyond. I will continue to work with him in all of my projects. He is very great about dealing with customers, allowing them to change their mind and having to start over. Thank you for your patience and your help! :)”</span></p>
+                                        <p id="u7937-2"><span id="u7937">“Siwalik has completed yet another project!
+                                                Very quick and always goes above and beyond. I will continue to work
+                                                with him in all of my projects. He is very great about dealing with
+                                                customers, allowing them to change their mind and having to start over.
+                                                Thank you for your patience and your help! :)”</span></p>
                                         <p id="u7937-3">&nbsp;</p>
                                         <p id="u7937-5">-angeliej</p>
                                         <p>&nbsp;</p>
@@ -797,9 +997,13 @@ window['_fs_namespace'] = 'FS';
                                 </div>
                                 <div class="Container invi clearfix grpelem" id="u7943">
                                     <!-- group -->
-                                    <div class="clearfix grpelem shared_content" id="u7948-8" data-content-guid="u7948-8_content">
+                                    <div class="clearfix grpelem shared_content" id="u7948-8"
+                                        data-content-guid="u7948-8_content">
                                         <!-- content -->
-                                        <p id="u7948-2"><span id="u7948">“A true professional. Kept in constant contact and assured me every step along that way that it would be completed correctly, professionally, and timely. He far exceeded my expectations.”</span></p>
+                                        <p id="u7948-2"><span id="u7948">“A true professional. Kept in constant contact
+                                                and assured me every step along that way that it would be completed
+                                                correctly, professionally, and timely. He far exceeded my
+                                                expectations.”</span></p>
                                         <p id="u7948-3">&nbsp;</p>
                                         <p id="u7948-5">-rwilbanks5hs7</p>
                                         <p>&nbsp;</p>
@@ -807,9 +1011,12 @@ window['_fs_namespace'] = 'FS';
                                 </div>
                                 <div class="Container invi clearfix grpelem" id="u7954">
                                     <!-- group -->
-                                    <div class="clearfix grpelem shared_content" id="u7959-8" data-content-guid="u7959-8_content">
+                                    <div class="clearfix grpelem shared_content" id="u7959-8"
+                                        data-content-guid="u7959-8_content">
                                         <!-- content -->
-                                        <p id="u7959-2"><span id="u7959">“Siwalik M is very professional and make sure he answer his client needs. It was a pleasure to work with him.”</span></p>
+                                        <p id="u7959-2"><span id="u7959">“Siwalik M is very professional and make sure
+                                                he answer his client needs. It was a pleasure to work with him.”</span>
+                                        </p>
                                         <p id="u7959-3">&nbsp;</p>
                                         <p id="u7959-5">-Jmboma</p>
                                         <p>&nbsp;</p>
@@ -827,7 +1034,9 @@ window['_fs_namespace'] = 'FS';
                     <h2 id="u7962-6">&nbsp;</h2>
                     <h2 id="u7962-8">Right now I'm working as a UI Developer at India's Hottest Startup, Freshdesk!</h2>
                     <h2 id="u7962-9">&nbsp;</h2>
-                    <h2 id="u7962-11">I love to spend my leisure by discovering new places, playing music and learning new things. I believe in sharing of knowledge so I write in a lot of forums and blogs as well.</h2>
+                    <h2 id="u7962-11">I love to spend my leisure by discovering new places, playing music and learning
+                        new things. I believe in sharing of knowledge so I write in a lot of forums and blogs as well.
+                    </h2>
                 </div>
                 <div class="clearfix colelem shared_content" id="u7965-4" data-content-guid="u7965-4_content">
                     <!-- content -->
@@ -837,17 +1046,24 @@ window['_fs_namespace'] = 'FS';
                     <!-- group -->
                     <div class="clearfix grpelem" id="u8618">
                         <!-- group -->
-                        <a class="nonblock nontext grpelem shared_content" id="u7986" href="http://fb.me/siwalikm" target="_blank" data-content-guid="u7986_content">
+                        <a class="nonblock nontext grpelem shared_content" id="u7986" href="http://fb.me/siwalikm"
+                            target="_blank" data-content-guid="u7986_content">
                             <!-- state-based BG images -->
                         </a>
-                        <a class="nonblock nontext grpelem shared_content" id="u7994" href="http://www.linkedin.com/in/siwalikm" target="_blank" data-content-guid="u7994_content">
+                        <a class="nonblock nontext grpelem shared_content" id="u7994"
+                            href="http://www.linkedin.com/in/siwalikm" target="_blank"
+                            data-content-guid="u7994_content">
                             <!-- state-based BG images -->
                         </a>
-                        <a class="nonblock nontext grpelem shared_content" id="u8001" href="http://www.quora.com/profile/Siwalik-Mukherjee" target="_blank" data-content-guid="u8001_content">
+                        <a class="nonblock nontext grpelem shared_content" id="u8001"
+                            href="http://www.quora.com/profile/Siwalik-Mukherjee" target="_blank"
+                            data-content-guid="u8001_content">
                             <!-- state-based BG images -->
                         </a>
                     </div>
-                    <a class="nonblock nontext grpelem shared_content" id="u8842" href="mailto:contact@siwalik.in?Subject=Website-Form-Submission" target="_blank" data-content-guid="u8842_content">
+                    <a class="nonblock nontext grpelem shared_content" id="u8842"
+                        href="mailto:contact@siwalik.in?Subject=Website-Form-Submission" target="_blank"
+                        data-content-guid="u8842_content">
                         <!-- state-based BG images -->
                     </a>
                 </div>
@@ -888,7 +1104,9 @@ window['_fs_namespace'] = 'FS';
                             <div class="clearfix temp_no_id" data-orig-id="u131_align_to_page">
                                 <div class="rounded-corners clip_frame colelem temp_no_id" data-orig-id="u6543">
                                     <!-- image -->
-                                    <img class="block temp_no_id temp_no_img_src" data-orig-src="images/_dsc0973.jpg" alt="Siwalik Mukherjee siwalik.in webdeveloper" data-image-width="178" data-image-height="178" data-orig-id="u6543_img" src="images/blank.gif" />
+                                    <img class="block temp_no_id temp_no_img_src" data-orig-src="images/_dsc0973.jpg"
+                                        alt="Siwalik Mukherjee siwalik.in webdeveloper" data-image-width="178"
+                                        data-image-height="178" data-orig-id="u6543_img" src="images/blank.gif" />
                                 </div>
                                 <div class="clearfix colelem placeholder" data-placeholder-for="u106-10_content">
                                     <!-- placeholder node -->
@@ -906,7 +1124,9 @@ window['_fs_namespace'] = 'FS';
                         <!-- group -->
                         <div class="clip_frame grpelem temp_no_id" data-orig-id="u2679">
                             <!-- image -->
-                            <img class="block temp_no_id temp_no_img_src" data-orig-src="images/macbook.png" alt="" data-image-width="645" data-image-height="371" data-orig-id="u2679_img" src="images/blank.gif" />
+                            <img class="block temp_no_id temp_no_img_src" data-orig-src="images/macbook.png" alt=""
+                                data-image-width="645" data-image-height="371" data-orig-id="u2679_img"
+                                src="images/blank.gif" />
                         </div>
                         <div class="SlideShowWidget clearfix grpelem temp_no_id" data-orig-id="slideshowu3204">
                             <!-- none box -->
@@ -915,47 +1135,81 @@ window['_fs_namespace'] = 'FS';
                                     <!-- stack box -->
                                     <div class="SSSlide clip_frame grpelem temp_no_id" data-orig-id="u3208">
                                         <!-- image -->
-                                        <img class="block ImageInclude temp_no_id" data-src="images/siwalikin_siwalik_mukherjee_screenshots__0000_layer-11.jpg" src="images/blank.gif" alt="" data-width="466" data-height="293" data-orig-id="u3208_img" />
+                                        <img class="block ImageInclude temp_no_id"
+                                            data-src="images/siwalikin_siwalik_mukherjee_screenshots__0000_layer-11.jpg"
+                                            src="images/blank.gif" alt="" data-width="466" data-height="293"
+                                            data-orig-id="u3208_img" />
                                     </div>
                                     <div class="SSSlide invi clip_frame grpelem temp_no_id" data-orig-id="u3328">
                                         <!-- image -->
-                                        <img class="block ImageInclude temp_no_id" data-src="images/siwalikin_siwalik_mukherjee_screenshots__0001_layer-10.png" src="images/blank.gif" alt="" data-width="466" data-height="293" data-orig-id="u3328_img" />
+                                        <img class="block ImageInclude temp_no_id"
+                                            data-src="images/siwalikin_siwalik_mukherjee_screenshots__0001_layer-10.png"
+                                            src="images/blank.gif" alt="" data-width="466" data-height="293"
+                                            data-orig-id="u3328_img" />
                                     </div>
                                     <div class="SSSlide invi clip_frame grpelem temp_no_id" data-orig-id="u3348">
                                         <!-- image -->
-                                        <img class="block ImageInclude temp_no_id" data-src="images/siwalikin_siwalik_mukherjee_screenshots__0002_layer-9.png" src="images/blank.gif" alt="" data-width="466" data-height="293" data-orig-id="u3348_img" />
+                                        <img class="block ImageInclude temp_no_id"
+                                            data-src="images/siwalikin_siwalik_mukherjee_screenshots__0002_layer-9.png"
+                                            src="images/blank.gif" alt="" data-width="466" data-height="293"
+                                            data-orig-id="u3348_img" />
                                     </div>
                                     <div class="SSSlide invi clip_frame grpelem temp_no_id" data-orig-id="u3368">
                                         <!-- image -->
-                                        <img class="block ImageInclude temp_no_id" data-src="images/siwalikin_siwalik_mukherjee_screenshots__0003_layer-8.png" src="images/blank.gif" alt="" data-width="466" data-height="293" data-orig-id="u3368_img" />
+                                        <img class="block ImageInclude temp_no_id"
+                                            data-src="images/siwalikin_siwalik_mukherjee_screenshots__0003_layer-8.png"
+                                            src="images/blank.gif" alt="" data-width="466" data-height="293"
+                                            data-orig-id="u3368_img" />
                                     </div>
-                                    <div class="SSSlide invi clip_frame clearfix grpelem temp_no_id" data-orig-id="u3388">
+                                    <div class="SSSlide invi clip_frame clearfix grpelem temp_no_id"
+                                        data-orig-id="u3388">
                                         <!-- image -->
-                                        <img class="ImageInclude position_content temp_no_id" data-src="images/siwalikin_siwalik_mukherjee_screenshots__0004_layer-6.png" src="images/blank.gif" alt="" data-width="467" data-height="293" data-orig-id="u3388_img" />
+                                        <img class="ImageInclude position_content temp_no_id"
+                                            data-src="images/siwalikin_siwalik_mukherjee_screenshots__0004_layer-6.png"
+                                            src="images/blank.gif" alt="" data-width="467" data-height="293"
+                                            data-orig-id="u3388_img" />
                                     </div>
                                     <div class="SSSlide invi clip_frame grpelem temp_no_id" data-orig-id="u3408">
                                         <!-- image -->
-                                        <img class="block ImageInclude temp_no_id" data-src="images/siwalikin_siwalik_mukherjee_screenshots__0005_layer-5.jpg" src="images/blank.gif" alt="" data-width="466" data-height="293" data-orig-id="u3408_img" />
+                                        <img class="block ImageInclude temp_no_id"
+                                            data-src="images/siwalikin_siwalik_mukherjee_screenshots__0005_layer-5.jpg"
+                                            src="images/blank.gif" alt="" data-width="466" data-height="293"
+                                            data-orig-id="u3408_img" />
                                     </div>
                                     <div class="SSSlide invi clip_frame grpelem temp_no_id" data-orig-id="u3428">
                                         <!-- image -->
-                                        <img class="block ImageInclude temp_no_id" data-src="images/siwalikin_siwalik_mukherjee_screenshots__0006_layer-12.jpg" src="images/blank.gif" alt="" data-width="466" data-height="293" data-orig-id="u3428_img" />
+                                        <img class="block ImageInclude temp_no_id"
+                                            data-src="images/siwalikin_siwalik_mukherjee_screenshots__0006_layer-12.jpg"
+                                            src="images/blank.gif" alt="" data-width="466" data-height="293"
+                                            data-orig-id="u3428_img" />
                                     </div>
                                     <div class="SSSlide invi clip_frame grpelem temp_no_id" data-orig-id="u3448">
                                         <!-- image -->
-                                        <img class="block ImageInclude temp_no_id" data-src="images/siwalikin_siwalik_mukherjee_screenshots__0007_web1.jpg" src="images/blank.gif" alt="" data-width="466" data-height="293" data-orig-id="u3448_img" />
+                                        <img class="block ImageInclude temp_no_id"
+                                            data-src="images/siwalikin_siwalik_mukherjee_screenshots__0007_web1.jpg"
+                                            src="images/blank.gif" alt="" data-width="466" data-height="293"
+                                            data-orig-id="u3448_img" />
                                     </div>
                                     <div class="SSSlide invi clip_frame grpelem temp_no_id" data-orig-id="u3468">
                                         <!-- image -->
-                                        <img class="block ImageInclude temp_no_id" data-src="images/siwalikin_siwalik_mukherjee_screenshots__0008_layer-2.png" src="images/blank.gif" alt="" data-width="466" data-height="293" data-orig-id="u3468_img" />
+                                        <img class="block ImageInclude temp_no_id"
+                                            data-src="images/siwalikin_siwalik_mukherjee_screenshots__0008_layer-2.png"
+                                            src="images/blank.gif" alt="" data-width="466" data-height="293"
+                                            data-orig-id="u3468_img" />
                                     </div>
                                     <div class="SSSlide invi clip_frame grpelem temp_no_id" data-orig-id="u3488">
                                         <!-- image -->
-                                        <img class="block ImageInclude temp_no_id" data-src="images/siwalikin_siwalik_mukherjee_screenshots__0009_layer-1.png" src="images/blank.gif" alt="" data-width="466" data-height="293" data-orig-id="u3488_img" />
+                                        <img class="block ImageInclude temp_no_id"
+                                            data-src="images/siwalikin_siwalik_mukherjee_screenshots__0009_layer-1.png"
+                                            src="images/blank.gif" alt="" data-width="466" data-height="293"
+                                            data-orig-id="u3488_img" />
                                     </div>
                                     <div class="SSSlide invi clip_frame grpelem temp_no_id" data-orig-id="u3508">
                                         <!-- image -->
-                                        <img class="block ImageInclude temp_no_id" data-src="images/siwalikin_siwalik_mukherjee_screenshots__0010_layer-15.jpg" src="images/blank.gif" alt="" data-width="466" data-height="293" data-orig-id="u3508_img" />
+                                        <img class="block ImageInclude temp_no_id"
+                                            data-src="images/siwalikin_siwalik_mukherjee_screenshots__0010_layer-15.jpg"
+                                            src="images/blank.gif" alt="" data-width="466" data-height="293"
+                                            data-orig-id="u3508_img" />
                                     </div>
                                 </div>
                             </div>
@@ -1079,7 +1333,8 @@ window['_fs_namespace'] = 'FS';
                                 </div>
                             </div>
                             <div class="popup_anchor temp_no_id" data-orig-id="u3216-4popup">
-                                <div class="SSPreviousButton rounded-corners normal-next-prev-button shadow clearfix temp_no_id" data-orig-id="u3216-4">
+                                <div class="SSPreviousButton rounded-corners normal-next-prev-button shadow clearfix temp_no_id"
+                                    data-orig-id="u3216-4">
                                     <!-- content -->
                                     <p class="placeholder" data-placeholder-for="u3216-4_0_content">
                                         <!-- placeholder node -->
@@ -1087,7 +1342,8 @@ window['_fs_namespace'] = 'FS';
                                 </div>
                             </div>
                             <div class="popup_anchor temp_no_id" data-orig-id="u3214-4popup">
-                                <div class="SSNextButton normal-next-prev-button shadow rounded-corners clearfix temp_no_id" data-orig-id="u3214-4">
+                                <div class="SSNextButton normal-next-prev-button shadow rounded-corners clearfix temp_no_id"
+                                    data-orig-id="u3214-4">
                                     <!-- content -->
                                     <p class="placeholder" data-placeholder-for="u3214-4_0_content">
                                         <!-- placeholder node -->
@@ -1100,11 +1356,15 @@ window['_fs_namespace'] = 'FS';
                         <!-- group -->
                         <div class="clip_frame grpelem temp_no_id" data-orig-id="u7364">
                             <!-- image -->
-                            <img class="block temp_no_id temp_no_img_src" data-orig-src="images/2-html.jpg" alt="HTML 5&nbsp; icon" title="HTML" data-image-width="42" data-image-height="42" data-orig-id="u7364_img" src="images/blank.gif" />
+                            <img class="block temp_no_id temp_no_img_src" data-orig-src="images/2-html.jpg"
+                                alt="HTML 5&nbsp; icon" title="HTML" data-image-width="42" data-image-height="42"
+                                data-orig-id="u7364_img" src="images/blank.gif" />
                         </div>
                         <div class="clip_frame grpelem temp_no_id" data-orig-id="u7356">
                             <!-- image -->
-                            <img class="block temp_no_id temp_no_img_src" data-orig-src="images/2-css.jpg" alt="CSS 3&nbsp; icon" title="CSS" data-image-width="42" data-image-height="42" data-orig-id="u7356_img" src="images/blank.gif" />
+                            <img class="block temp_no_id temp_no_img_src" data-orig-src="images/2-css.jpg"
+                                alt="CSS 3&nbsp; icon" title="CSS" data-image-width="42" data-image-height="42"
+                                data-orig-id="u7356_img" src="images/blank.gif" />
                         </div>
                         <div class="clearfix grpelem temp_no_id" data-orig-id="pu7344">
                             <!-- column -->
@@ -1115,25 +1375,35 @@ window['_fs_namespace'] = 'FS';
                                 <!-- group -->
                                 <div class="clip_frame grpelem temp_no_id" data-orig-id="u7378">
                                     <!-- image -->
-                                    <img class="block temp_no_id temp_no_img_src" data-orig-src="images/2-js.jpg" alt="Javascript icon" title="Javascript" data-image-width="42" data-image-height="42" data-orig-id="u7378_img" src="images/blank.gif" />
+                                    <img class="block temp_no_id temp_no_img_src" data-orig-src="images/2-js.jpg"
+                                        alt="Javascript icon" title="Javascript" data-image-width="42"
+                                        data-image-height="42" data-orig-id="u7378_img" src="images/blank.gif" />
                                 </div>
                                 <div class="clip_frame grpelem temp_no_id" data-orig-id="u7371">
                                     <!-- image -->
-                                    <img class="block temp_no_id temp_no_img_src" data-orig-src="images/2-jquery.jpg" alt="jQuery Icon" title="jQuery" data-image-width="42" data-image-height="42" data-orig-id="u7371_img" src="images/blank.gif" />
+                                    <img class="block temp_no_id temp_no_img_src" data-orig-src="images/2-jquery.jpg"
+                                        alt="jQuery Icon" title="jQuery" data-image-width="42" data-image-height="42"
+                                        data-orig-id="u7371_img" src="images/blank.gif" />
                                 </div>
                                 <div class="clip_frame grpelem temp_no_id" data-orig-id="u7392">
                                     <!-- image -->
-                                    <img class="block temp_no_id temp_no_img_src" data-orig-src="images/2-php.jpg" alt="PHP icon" title="PHP" data-image-width="42" data-image-height="42" data-orig-id="u7392_img" src="images/blank.gif" />
+                                    <img class="block temp_no_id temp_no_img_src" data-orig-src="images/2-php.jpg"
+                                        alt="PHP icon" title="PHP" data-image-width="42" data-image-height="42"
+                                        data-orig-id="u7392_img" src="images/blank.gif" />
                                 </div>
                             </div>
                         </div>
                         <div class="clip_frame grpelem temp_no_id" data-orig-id="u7385">
                             <!-- image -->
-                            <img class="block temp_no_id temp_no_img_src" data-orig-src="images/2-mysql.jpg" alt="mySql icon" title="mySql" data-image-width="42" data-image-height="42" data-orig-id="u7385_img" src="images/blank.gif" />
+                            <img class="block temp_no_id temp_no_img_src" data-orig-src="images/2-mysql.jpg"
+                                alt="mySql icon" title="mySql" data-image-width="42" data-image-height="42"
+                                data-orig-id="u7385_img" src="images/blank.gif" />
                         </div>
                         <div class="clip_frame grpelem temp_no_id" data-orig-id="u7399">
                             <!-- image -->
-                            <img class="block temp_no_id temp_no_img_src" data-orig-src="images/2-scss.jpg" alt="Scss icon" title="Scss" data-image-width="42" data-image-height="42" data-orig-id="u7399_img" src="images/blank.gif" />
+                            <img class="block temp_no_id temp_no_img_src" data-orig-src="images/2-scss.jpg"
+                                alt="Scss icon" title="Scss" data-image-width="42" data-image-height="42"
+                                data-orig-id="u7399_img" src="images/blank.gif" />
                         </div>
                     </div>
                 </div>
@@ -1148,23 +1418,39 @@ window['_fs_namespace'] = 'FS';
                             <!-- group -->
                             <div class="clearfix grpelem temp_no_id" data-orig-id="u2183">
                                 <!-- group -->
-                                <img class="grpelem temp_no_id temp_no_img_src" alt="" data-orig-src="images/cards-u12022.png" data-image-width="450" data-orig-id="u1202" src="images/blank.gif" />
+                                <img class="grpelem temp_no_id temp_no_img_src" alt=""
+                                    data-orig-src="images/cards-u12022.png" data-image-width="450" data-orig-id="u1202"
+                                    src="images/blank.gif" />
                                 <!-- rasterized frame -->
                                 <div class="clip_frame grpelem temp_no_id" data-orig-id="u1212">
                                     <!-- image -->
-                                    <img class="block temp_no_id temp_no_img_src" data-orig-src="images/masking-4-2.png" alt="" data-image-width="64" data-image-height="86" data-orig-id="u1212_img" src="images/blank.gif" />
+                                    <img class="block temp_no_id temp_no_img_src" data-orig-src="images/masking-4-2.png"
+                                        alt="" data-image-width="64" data-image-height="86" data-orig-id="u1212_img"
+                                        src="images/blank.gif" />
                                 </div>
-                                <div class="clip_frame grpelem temp_no_id" data-mu-ie-matrix="progid:DXImageTransform.Microsoft.Matrix(M11=-0.9945,M12=-0.1045,M21=0.1045,M22=-0.9945,SizingMethod='auto expand')" data-mu-ie-matrix-dx="-4" data-mu-ie-matrix-dy="-3" data-orig-id="u1231">
+                                <div class="clip_frame grpelem temp_no_id"
+                                    data-mu-ie-matrix="progid:DXImageTransform.Microsoft.Matrix(M11=-0.9945,M12=-0.1045,M21=0.1045,M22=-0.9945,SizingMethod='auto expand')"
+                                    data-mu-ie-matrix-dx="-4" data-mu-ie-matrix-dy="-3" data-orig-id="u1231">
                                     <!-- image -->
-                                    <img class="block temp_no_id temp_no_img_src" data-orig-src="images/masking-4-2.png" alt="" data-image-width="64" data-image-height="86" data-orig-id="u1231_img" src="images/blank.gif" />
+                                    <img class="block temp_no_id temp_no_img_src" data-orig-src="images/masking-4-2.png"
+                                        alt="" data-image-width="64" data-image-height="86" data-orig-id="u1231_img"
+                                        src="images/blank.gif" />
                                 </div>
-                                <div class="clip_frame grpelem temp_no_id" data-mu-ie-matrix="progid:DXImageTransform.Microsoft.Matrix(M11=-0.2079,M12=0.9781,M21=-0.9781,M22=-0.2079,SizingMethod='auto expand')" data-mu-ie-matrix-dx="-17" data-mu-ie-matrix-dy="3" data-orig-id="u1245">
+                                <div class="clip_frame grpelem temp_no_id"
+                                    data-mu-ie-matrix="progid:DXImageTransform.Microsoft.Matrix(M11=-0.2079,M12=0.9781,M21=-0.9781,M22=-0.2079,SizingMethod='auto expand')"
+                                    data-mu-ie-matrix-dx="-17" data-mu-ie-matrix-dy="3" data-orig-id="u1245">
                                     <!-- image -->
-                                    <img class="block temp_no_id temp_no_img_src" data-orig-src="images/masking-4-2.png" alt="" data-image-width="64" data-image-height="86" data-orig-id="u1245_img" src="images/blank.gif" />
+                                    <img class="block temp_no_id temp_no_img_src" data-orig-src="images/masking-4-2.png"
+                                        alt="" data-image-width="64" data-image-height="86" data-orig-id="u1245_img"
+                                        src="images/blank.gif" />
                                 </div>
-                                <div class="clip_frame grpelem temp_no_id" data-mu-ie-matrix="progid:DXImageTransform.Microsoft.Matrix(M11=0.1045,M12=-0.9945,M21=0.9945,M22=0.1045,SizingMethod='auto expand')" data-mu-ie-matrix-dx="-14" data-mu-ie-matrix-dy="7" data-orig-id="u1252">
+                                <div class="clip_frame grpelem temp_no_id"
+                                    data-mu-ie-matrix="progid:DXImageTransform.Microsoft.Matrix(M11=0.1045,M12=-0.9945,M21=0.9945,M22=0.1045,SizingMethod='auto expand')"
+                                    data-mu-ie-matrix-dx="-14" data-mu-ie-matrix-dy="7" data-orig-id="u1252">
                                     <!-- image -->
-                                    <img class="block temp_no_id temp_no_img_src" data-orig-src="images/masking-4-2.png" alt="" data-image-width="64" data-image-height="86" data-orig-id="u1252_img" src="images/blank.gif" />
+                                    <img class="block temp_no_id temp_no_img_src" data-orig-src="images/masking-4-2.png"
+                                        alt="" data-image-width="64" data-image-height="86" data-orig-id="u1252_img"
+                                        src="images/blank.gif" />
                                 </div>
                             </div>
                             <div class="SlideShowWidget clearfix grpelem temp_no_id" data-orig-id="slideshowu2229">
@@ -1172,74 +1458,139 @@ window['_fs_namespace'] = 'FS';
                                 <div class="popup_anchor temp_no_id" data-orig-id="u2232popup">
                                     <div class="SlideShowContentPanel clearfix temp_no_id" data-orig-id="u2232">
                                         <!-- stack box -->
-                                        <div class="SSSlide clip_frame clearfix grpelem temp_no_id" data-orig-id="u2233">
+                                        <div class="SSSlide clip_frame clearfix grpelem temp_no_id"
+                                            data-orig-id="u2233">
                                             <!-- image -->
-                                            <img class="ImageInclude position_content temp_no_id" data-src="images/siwalikin_logos_siwalik_mukherjee%20(1).png" src="images/blank.gif" alt="" data-width="276" data-height="271" data-orig-id="u2233_img" />
+                                            <img class="ImageInclude position_content temp_no_id"
+                                                data-src="images/siwalikin_logos_siwalik_mukherjee%20(1).png"
+                                                src="images/blank.gif" alt="" data-width="276" data-height="271"
+                                                data-orig-id="u2233_img" />
                                         </div>
-                                        <div class="SSSlide invi clip_frame clearfix grpelem temp_no_id" data-orig-id="u2381">
+                                        <div class="SSSlide invi clip_frame clearfix grpelem temp_no_id"
+                                            data-orig-id="u2381">
                                             <!-- image -->
-                                            <img class="ImageInclude position_content temp_no_id" data-src="images/siwalikin_logos_siwalik_mukherjee%20(2).png" src="images/blank.gif" alt="" data-width="276" data-height="271" data-orig-id="u2381_img" />
+                                            <img class="ImageInclude position_content temp_no_id"
+                                                data-src="images/siwalikin_logos_siwalik_mukherjee%20(2).png"
+                                                src="images/blank.gif" alt="" data-width="276" data-height="271"
+                                                data-orig-id="u2381_img" />
                                         </div>
-                                        <div class="SSSlide invi clip_frame clearfix grpelem temp_no_id" data-orig-id="u2401">
+                                        <div class="SSSlide invi clip_frame clearfix grpelem temp_no_id"
+                                            data-orig-id="u2401">
                                             <!-- image -->
-                                            <img class="ImageInclude position_content temp_no_id" data-src="images/siwalikin_logos_siwalik_mukherjee%20(3).png" src="images/blank.gif" alt="" data-width="276" data-height="271" data-orig-id="u2401_img" />
+                                            <img class="ImageInclude position_content temp_no_id"
+                                                data-src="images/siwalikin_logos_siwalik_mukherjee%20(3).png"
+                                                src="images/blank.gif" alt="" data-width="276" data-height="271"
+                                                data-orig-id="u2401_img" />
                                         </div>
-                                        <div class="SSSlide invi clip_frame clearfix grpelem temp_no_id" data-orig-id="u2421">
+                                        <div class="SSSlide invi clip_frame clearfix grpelem temp_no_id"
+                                            data-orig-id="u2421">
                                             <!-- image -->
-                                            <img class="ImageInclude position_content temp_no_id" data-src="images/siwalikin_logos_siwalik_mukherjee%20(4).png" src="images/blank.gif" alt="" data-width="276" data-height="271" data-orig-id="u2421_img" />
+                                            <img class="ImageInclude position_content temp_no_id"
+                                                data-src="images/siwalikin_logos_siwalik_mukherjee%20(4).png"
+                                                src="images/blank.gif" alt="" data-width="276" data-height="271"
+                                                data-orig-id="u2421_img" />
                                         </div>
-                                        <div class="SSSlide invi clip_frame clearfix grpelem temp_no_id" data-orig-id="u2441">
+                                        <div class="SSSlide invi clip_frame clearfix grpelem temp_no_id"
+                                            data-orig-id="u2441">
                                             <!-- image -->
-                                            <img class="ImageInclude position_content temp_no_id" data-src="images/siwalikin_logos_siwalik_mukherjee%20(5).png" src="images/blank.gif" alt="" data-width="276" data-height="271" data-orig-id="u2441_img" />
+                                            <img class="ImageInclude position_content temp_no_id"
+                                                data-src="images/siwalikin_logos_siwalik_mukherjee%20(5).png"
+                                                src="images/blank.gif" alt="" data-width="276" data-height="271"
+                                                data-orig-id="u2441_img" />
                                         </div>
-                                        <div class="SSSlide invi clip_frame clearfix grpelem temp_no_id" data-orig-id="u3592">
+                                        <div class="SSSlide invi clip_frame clearfix grpelem temp_no_id"
+                                            data-orig-id="u3592">
                                             <!-- image -->
-                                            <img class="ImageInclude position_content temp_no_id" data-src="images/siwalikin_logos_siwalik_mukherjee%20(16).png" src="images/blank.gif" alt="" data-width="276" data-height="271" data-orig-id="u3592_img" />
+                                            <img class="ImageInclude position_content temp_no_id"
+                                                data-src="images/siwalikin_logos_siwalik_mukherjee%20(16).png"
+                                                src="images/blank.gif" alt="" data-width="276" data-height="271"
+                                                data-orig-id="u3592_img" />
                                         </div>
-                                        <div class="SSSlide invi clip_frame clearfix grpelem temp_no_id" data-orig-id="u2461">
+                                        <div class="SSSlide invi clip_frame clearfix grpelem temp_no_id"
+                                            data-orig-id="u2461">
                                             <!-- image -->
-                                            <img class="ImageInclude position_content temp_no_id" data-src="images/siwalikin_logos_siwalik_mukherjee%20(6).png" src="images/blank.gif" alt="" data-width="276" data-height="271" data-orig-id="u2461_img" />
+                                            <img class="ImageInclude position_content temp_no_id"
+                                                data-src="images/siwalikin_logos_siwalik_mukherjee%20(6).png"
+                                                src="images/blank.gif" alt="" data-width="276" data-height="271"
+                                                data-orig-id="u2461_img" />
                                         </div>
-                                        <div class="SSSlide invi clip_frame clearfix grpelem temp_no_id" data-orig-id="u2481">
+                                        <div class="SSSlide invi clip_frame clearfix grpelem temp_no_id"
+                                            data-orig-id="u2481">
                                             <!-- image -->
-                                            <img class="ImageInclude position_content temp_no_id" data-src="images/siwalikin_logos_siwalik_mukherjee%20(7).png" src="images/blank.gif" alt="" data-width="276" data-height="271" data-orig-id="u2481_img" />
+                                            <img class="ImageInclude position_content temp_no_id"
+                                                data-src="images/siwalikin_logos_siwalik_mukherjee%20(7).png"
+                                                src="images/blank.gif" alt="" data-width="276" data-height="271"
+                                                data-orig-id="u2481_img" />
                                         </div>
-                                        <div class="SSSlide invi clip_frame clearfix grpelem temp_no_id" data-orig-id="u2501">
+                                        <div class="SSSlide invi clip_frame clearfix grpelem temp_no_id"
+                                            data-orig-id="u2501">
                                             <!-- image -->
-                                            <img class="ImageInclude position_content temp_no_id" data-src="images/siwalikin_logos_siwalik_mukherjee%20(8).png" src="images/blank.gif" alt="" data-width="276" data-height="271" data-orig-id="u2501_img" />
+                                            <img class="ImageInclude position_content temp_no_id"
+                                                data-src="images/siwalikin_logos_siwalik_mukherjee%20(8).png"
+                                                src="images/blank.gif" alt="" data-width="276" data-height="271"
+                                                data-orig-id="u2501_img" />
                                         </div>
-                                        <div class="SSSlide invi clip_frame clearfix grpelem temp_no_id" data-orig-id="u2521">
+                                        <div class="SSSlide invi clip_frame clearfix grpelem temp_no_id"
+                                            data-orig-id="u2521">
                                             <!-- image -->
-                                            <img class="ImageInclude position_content temp_no_id" data-src="images/siwalikin_logos_siwalik_mukherjee%20(9).png" src="images/blank.gif" alt="" data-width="276" data-height="271" data-orig-id="u2521_img" />
+                                            <img class="ImageInclude position_content temp_no_id"
+                                                data-src="images/siwalikin_logos_siwalik_mukherjee%20(9).png"
+                                                src="images/blank.gif" alt="" data-width="276" data-height="271"
+                                                data-orig-id="u2521_img" />
                                         </div>
-                                        <div class="SSSlide invi clip_frame clearfix grpelem temp_no_id" data-orig-id="u2541">
+                                        <div class="SSSlide invi clip_frame clearfix grpelem temp_no_id"
+                                            data-orig-id="u2541">
                                             <!-- image -->
-                                            <img class="ImageInclude position_content temp_no_id" data-src="images/siwalikin_logos_siwalik_mukherjee%20(10).png" src="images/blank.gif" alt="" data-width="276" data-height="271" data-orig-id="u2541_img" />
+                                            <img class="ImageInclude position_content temp_no_id"
+                                                data-src="images/siwalikin_logos_siwalik_mukherjee%20(10).png"
+                                                src="images/blank.gif" alt="" data-width="276" data-height="271"
+                                                data-orig-id="u2541_img" />
                                         </div>
-                                        <div class="SSSlide invi clip_frame clearfix grpelem temp_no_id" data-orig-id="u2561">
+                                        <div class="SSSlide invi clip_frame clearfix grpelem temp_no_id"
+                                            data-orig-id="u2561">
                                             <!-- image -->
-                                            <img class="ImageInclude position_content temp_no_id" data-src="images/siwalikin_logos_siwalik_mukherjee%20(11).png" src="images/blank.gif" alt="" data-width="276" data-height="271" data-orig-id="u2561_img" />
+                                            <img class="ImageInclude position_content temp_no_id"
+                                                data-src="images/siwalikin_logos_siwalik_mukherjee%20(11).png"
+                                                src="images/blank.gif" alt="" data-width="276" data-height="271"
+                                                data-orig-id="u2561_img" />
                                         </div>
-                                        <div class="SSSlide invi clip_frame clearfix grpelem temp_no_id" data-orig-id="u2581">
+                                        <div class="SSSlide invi clip_frame clearfix grpelem temp_no_id"
+                                            data-orig-id="u2581">
                                             <!-- image -->
-                                            <img class="ImageInclude position_content temp_no_id" data-src="images/siwalikin_logos_siwalik_mukherjee%20(12).png" src="images/blank.gif" alt="" data-width="276" data-height="271" data-orig-id="u2581_img" />
+                                            <img class="ImageInclude position_content temp_no_id"
+                                                data-src="images/siwalikin_logos_siwalik_mukherjee%20(12).png"
+                                                src="images/blank.gif" alt="" data-width="276" data-height="271"
+                                                data-orig-id="u2581_img" />
                                         </div>
-                                        <div class="SSSlide invi clip_frame clearfix grpelem temp_no_id" data-orig-id="u2601">
+                                        <div class="SSSlide invi clip_frame clearfix grpelem temp_no_id"
+                                            data-orig-id="u2601">
                                             <!-- image -->
-                                            <img class="ImageInclude position_content temp_no_id" data-src="images/siwalikin_logos_siwalik_mukherjee%20(13).png" src="images/blank.gif" alt="" data-width="276" data-height="271" data-orig-id="u2601_img" />
+                                            <img class="ImageInclude position_content temp_no_id"
+                                                data-src="images/siwalikin_logos_siwalik_mukherjee%20(13).png"
+                                                src="images/blank.gif" alt="" data-width="276" data-height="271"
+                                                data-orig-id="u2601_img" />
                                         </div>
-                                        <div class="SSSlide invi clip_frame clearfix grpelem temp_no_id" data-orig-id="u2621">
+                                        <div class="SSSlide invi clip_frame clearfix grpelem temp_no_id"
+                                            data-orig-id="u2621">
                                             <!-- image -->
-                                            <img class="ImageInclude position_content temp_no_id" data-src="images/siwalikin_logos_siwalik_mukherjee%20(14).png" src="images/blank.gif" alt="" data-width="276" data-height="271" data-orig-id="u2621_img" />
+                                            <img class="ImageInclude position_content temp_no_id"
+                                                data-src="images/siwalikin_logos_siwalik_mukherjee%20(14).png"
+                                                src="images/blank.gif" alt="" data-width="276" data-height="271"
+                                                data-orig-id="u2621_img" />
                                         </div>
-                                        <div class="SSSlide invi clip_frame clearfix grpelem temp_no_id" data-orig-id="u2641">
+                                        <div class="SSSlide invi clip_frame clearfix grpelem temp_no_id"
+                                            data-orig-id="u2641">
                                             <!-- image -->
-                                            <img class="ImageInclude position_content temp_no_id" data-src="images/siwalikin_logos_siwalik_mukherjee%20(15).png" src="images/blank.gif" alt="" data-width="276" data-height="271" data-orig-id="u2641_img" />
+                                            <img class="ImageInclude position_content temp_no_id"
+                                                data-src="images/siwalikin_logos_siwalik_mukherjee%20(15).png"
+                                                src="images/blank.gif" alt="" data-width="276" data-height="271"
+                                                data-orig-id="u2641_img" />
                                         </div>
                                     </div>
                                 </div>
                                 <div class="popup_anchor temp_no_id" data-orig-id="u2241-4popup">
-                                    <div class="SSPreviousButton normal-next-prev-button shadow rounded-corners clearfix temp_no_id" data-orig-id="u2241-4">
+                                    <div class="SSPreviousButton normal-next-prev-button shadow rounded-corners clearfix temp_no_id"
+                                        data-orig-id="u2241-4">
                                         <!-- content -->
                                         <p class="placeholder" data-placeholder-for="u2241-4_0_content">
                                             <!-- placeholder node -->
@@ -1247,7 +1598,8 @@ window['_fs_namespace'] = 'FS';
                                     </div>
                                 </div>
                                 <div class="popup_anchor temp_no_id" data-orig-id="u2239-4popup">
-                                    <div class="SSNextButton normal-next-prev-button shadow rounded-corners clearfix temp_no_id" data-orig-id="u2239-4">
+                                    <div class="SSNextButton normal-next-prev-button shadow rounded-corners clearfix temp_no_id"
+                                        data-orig-id="u2239-4">
                                         <!-- content -->
                                         <p class="placeholder" data-placeholder-for="u2239-4_0_content">
                                             <!-- placeholder node -->
@@ -1263,11 +1615,15 @@ window['_fs_namespace'] = 'FS';
                             <!-- group -->
                             <div class="clip_frame grpelem temp_no_id" data-orig-id="u6956">
                                 <!-- image -->
-                                <img class="block temp_no_id temp_no_img_src" data-orig-src="images/1-ps.jpg" alt="Photoshop icon" title="Photoshop" data-image-width="40" data-image-height="40" data-orig-id="u6956_img" src="images/blank.gif" />
+                                <img class="block temp_no_id temp_no_img_src" data-orig-src="images/1-ps.jpg"
+                                    alt="Photoshop icon" title="Photoshop" data-image-width="40" data-image-height="40"
+                                    data-orig-id="u6956_img" src="images/blank.gif" />
                             </div>
                             <div class="clip_frame grpelem temp_no_id" data-orig-id="u6948">
                                 <!-- image -->
-                                <img class="block temp_no_id temp_no_img_src" data-orig-src="images/1-ai.jpg" alt="Illustrator icon" title="Illustrator" data-image-width="41" data-image-height="41" data-orig-id="u6948_img" src="images/blank.gif" />
+                                <img class="block temp_no_id temp_no_img_src" data-orig-src="images/1-ai.jpg"
+                                    alt="Illustrator icon" title="Illustrator" data-image-width="41"
+                                    data-image-height="41" data-orig-id="u6948_img" src="images/blank.gif" />
                             </div>
                         </div>
                     </div>
@@ -1281,13 +1637,17 @@ window['_fs_namespace'] = 'FS';
                         <!-- group -->
                         <div class="clip_frame grpelem temp_no_id" data-orig-id="u8855">
                             <!-- image -->
-                            <img class="block temp_no_id temp_no_img_src" data-orig-src="images/iphone6plus_spacegrey_portrait.png" alt="" data-image-width="175" data-image-height="352" data-orig-id="u8855_img" src="images/blank.gif" />
+                            <img class="block temp_no_id temp_no_img_src"
+                                data-orig-src="images/iphone6plus_spacegrey_portrait.png" alt="" data-image-width="175"
+                                data-image-height="352" data-orig-id="u8855_img" src="images/blank.gif" />
                         </div>
                         <div class="clearfix grpelem temp_no_id" data-orig-id="u7793">
                             <!-- group -->
                             <div class="clip_frame grpelem temp_no_id" data-orig-id="u7470">
                                 <!-- image -->
-                                <img class="block temp_no_id temp_no_img_src" data-orig-src="images/court-app.gif" alt="" data-image-width="154" data-image-height="283" data-orig-id="u7470_img" src="images/blank.gif" />
+                                <img class="block temp_no_id temp_no_img_src" data-orig-src="images/court-app.gif"
+                                    alt="" data-image-width="154" data-image-height="283" data-orig-id="u7470_img"
+                                    src="images/blank.gif" />
                             </div>
                         </div>
                     </div>
@@ -1304,7 +1664,9 @@ window['_fs_namespace'] = 'FS';
                         </div>
                         <div class="clip_frame colelem temp_no_id" data-orig-id="u7448">
                             <!-- image -->
-                            <img class="block temp_no_id temp_no_img_src" data-orig-src="images/3-cordova.jpg" alt="Cordova icon" title="Cordova" data-image-width="41" data-image-height="41" data-orig-id="u7448_img" src="images/blank.gif" />
+                            <img class="block temp_no_id temp_no_img_src" data-orig-src="images/3-cordova.jpg"
+                                alt="Cordova icon" title="Cordova" data-image-width="41" data-image-height="41"
+                                data-orig-id="u7448_img" src="images/blank.gif" />
                         </div>
                     </div>
                 </div>
@@ -1317,7 +1679,9 @@ window['_fs_namespace'] = 'FS';
                         <!-- group -->
                         <div class="clip_frame grpelem temp_no_id" data-orig-id="u6968">
                             <!-- image -->
-                            <img class="block temp_no_id temp_no_img_src" data-orig-src="images/scrapbook1.png" alt="" data-image-width="572" data-image-height="372" data-orig-id="u6968_img" src="images/blank.gif" />
+                            <img class="block temp_no_id temp_no_img_src" data-orig-src="images/scrapbook1.png" alt=""
+                                data-image-width="572" data-image-height="372" data-orig-id="u6968_img"
+                                src="images/blank.gif" />
                         </div>
                         <div class="SlideShowWidget clearfix grpelem temp_no_id" data-orig-id="slideshowu6978">
                             <!-- none box -->
@@ -1326,56 +1690,104 @@ window['_fs_namespace'] = 'FS';
                                     <!-- stack box -->
                                     <div class="SSSlide clip_frame clearfix grpelem temp_no_id" data-orig-id="u6989">
                                         <!-- image -->
-                                        <img class="ImageInclude position_content temp_no_id" data-src="images/siwalikin_siwalik_mukherjee_sketches__0000_sketch-_0006_layer-6.png" src="images/blank.gif" alt="" data-width="585" data-height="381" data-orig-id="u6989_img" />
+                                        <img class="ImageInclude position_content temp_no_id"
+                                            data-src="images/siwalikin_siwalik_mukherjee_sketches__0000_sketch-_0006_layer-6.png"
+                                            src="images/blank.gif" alt="" data-width="585" data-height="381"
+                                            data-orig-id="u6989_img" />
                                     </div>
-                                    <div class="SSSlide invi clip_frame clearfix grpelem temp_no_id" data-orig-id="u7109">
+                                    <div class="SSSlide invi clip_frame clearfix grpelem temp_no_id"
+                                        data-orig-id="u7109">
                                         <!-- image -->
-                                        <img class="ImageInclude position_content temp_no_id" data-src="images/siwalikin_siwalik_mukherjee_sketches__0001_layer-11.png" src="images/blank.gif" alt="" data-width="585" data-height="381" data-orig-id="u7109_img" />
+                                        <img class="ImageInclude position_content temp_no_id"
+                                            data-src="images/siwalikin_siwalik_mukherjee_sketches__0001_layer-11.png"
+                                            src="images/blank.gif" alt="" data-width="585" data-height="381"
+                                            data-orig-id="u7109_img" />
                                     </div>
-                                    <div class="SSSlide invi clip_frame clearfix grpelem temp_no_id" data-orig-id="u7129">
+                                    <div class="SSSlide invi clip_frame clearfix grpelem temp_no_id"
+                                        data-orig-id="u7129">
                                         <!-- image -->
-                                        <img class="ImageInclude position_content temp_no_id" data-src="images/siwalikin_siwalik_mukherjee_sketches__0002_layer-10.png" src="images/blank.gif" alt="" data-width="585" data-height="381" data-orig-id="u7129_img" />
+                                        <img class="ImageInclude position_content temp_no_id"
+                                            data-src="images/siwalikin_siwalik_mukherjee_sketches__0002_layer-10.png"
+                                            src="images/blank.gif" alt="" data-width="585" data-height="381"
+                                            data-orig-id="u7129_img" />
                                     </div>
-                                    <div class="SSSlide invi clip_frame clearfix grpelem temp_no_id" data-orig-id="u7149">
+                                    <div class="SSSlide invi clip_frame clearfix grpelem temp_no_id"
+                                        data-orig-id="u7149">
                                         <!-- image -->
-                                        <img class="ImageInclude position_content temp_no_id" data-src="images/siwalikin_siwalik_mukherjee_sketches__0003_sketch-_0003_layer-8.png" src="images/blank.gif" alt="" data-width="585" data-height="381" data-orig-id="u7149_img" />
+                                        <img class="ImageInclude position_content temp_no_id"
+                                            data-src="images/siwalikin_siwalik_mukherjee_sketches__0003_sketch-_0003_layer-8.png"
+                                            src="images/blank.gif" alt="" data-width="585" data-height="381"
+                                            data-orig-id="u7149_img" />
                                     </div>
-                                    <div class="SSSlide invi clip_frame clearfix grpelem temp_no_id" data-orig-id="u7169">
+                                    <div class="SSSlide invi clip_frame clearfix grpelem temp_no_id"
+                                        data-orig-id="u7169">
                                         <!-- image -->
-                                        <img class="ImageInclude position_content temp_no_id" data-src="images/siwalikin_siwalik_mukherjee_sketches__0004_sketch-_0000_layer-14.png" src="images/blank.gif" alt="" data-width="585" data-height="381" data-orig-id="u7169_img" />
+                                        <img class="ImageInclude position_content temp_no_id"
+                                            data-src="images/siwalikin_siwalik_mukherjee_sketches__0004_sketch-_0000_layer-14.png"
+                                            src="images/blank.gif" alt="" data-width="585" data-height="381"
+                                            data-orig-id="u7169_img" />
                                     </div>
-                                    <div class="SSSlide invi clip_frame clearfix grpelem temp_no_id" data-orig-id="u7189">
+                                    <div class="SSSlide invi clip_frame clearfix grpelem temp_no_id"
+                                        data-orig-id="u7189">
                                         <!-- image -->
-                                        <img class="ImageInclude position_content temp_no_id" data-src="images/siwalikin_siwalik_mukherjee_sketches__0005_sketch-_0001_layer-13.png" src="images/blank.gif" alt="" data-width="585" data-height="381" data-orig-id="u7189_img" />
+                                        <img class="ImageInclude position_content temp_no_id"
+                                            data-src="images/siwalikin_siwalik_mukherjee_sketches__0005_sketch-_0001_layer-13.png"
+                                            src="images/blank.gif" alt="" data-width="585" data-height="381"
+                                            data-orig-id="u7189_img" />
                                     </div>
-                                    <div class="SSSlide invi clip_frame clearfix grpelem temp_no_id" data-orig-id="u7209">
+                                    <div class="SSSlide invi clip_frame clearfix grpelem temp_no_id"
+                                        data-orig-id="u7209">
                                         <!-- image -->
-                                        <img class="ImageInclude position_content temp_no_id" data-src="images/siwalikin_siwalik_mukherjee_sketches__0006_layer-9.png" src="images/blank.gif" alt="" data-width="585" data-height="380" data-orig-id="u7209_img" />
+                                        <img class="ImageInclude position_content temp_no_id"
+                                            data-src="images/siwalikin_siwalik_mukherjee_sketches__0006_layer-9.png"
+                                            src="images/blank.gif" alt="" data-width="585" data-height="380"
+                                            data-orig-id="u7209_img" />
                                     </div>
-                                    <div class="SSSlide invi clip_frame clearfix grpelem temp_no_id" data-orig-id="u7229">
+                                    <div class="SSSlide invi clip_frame clearfix grpelem temp_no_id"
+                                        data-orig-id="u7229">
                                         <!-- image -->
-                                        <img class="ImageInclude position_content temp_no_id" data-src="images/siwalikin_siwalik_mukherjee_sketches__0007_layer-7.png" src="images/blank.gif" alt="" data-width="585" data-height="381" data-orig-id="u7229_img" />
+                                        <img class="ImageInclude position_content temp_no_id"
+                                            data-src="images/siwalikin_siwalik_mukherjee_sketches__0007_layer-7.png"
+                                            src="images/blank.gif" alt="" data-width="585" data-height="381"
+                                            data-orig-id="u7229_img" />
                                     </div>
-                                    <div class="SSSlide invi clip_frame clearfix grpelem temp_no_id" data-orig-id="u7249">
+                                    <div class="SSSlide invi clip_frame clearfix grpelem temp_no_id"
+                                        data-orig-id="u7249">
                                         <!-- image -->
-                                        <img class="ImageInclude position_content temp_no_id" data-src="images/siwalikin_siwalik_mukherjee_sketches__0008_layer-8.png" src="images/blank.gif" alt="" data-width="585" data-height="381" data-orig-id="u7249_img" />
+                                        <img class="ImageInclude position_content temp_no_id"
+                                            data-src="images/siwalikin_siwalik_mukherjee_sketches__0008_layer-8.png"
+                                            src="images/blank.gif" alt="" data-width="585" data-height="381"
+                                            data-orig-id="u7249_img" />
                                     </div>
-                                    <div class="SSSlide invi clip_frame clearfix grpelem temp_no_id" data-orig-id="u7269">
+                                    <div class="SSSlide invi clip_frame clearfix grpelem temp_no_id"
+                                        data-orig-id="u7269">
                                         <!-- image -->
-                                        <img class="ImageInclude position_content temp_no_id" data-src="images/siwalikin_siwalik_mukherjee_sketches__0009_sketch-_0002_layer-11.png" src="images/blank.gif" alt="" data-width="585" data-height="381" data-orig-id="u7269_img" />
+                                        <img class="ImageInclude position_content temp_no_id"
+                                            data-src="images/siwalikin_siwalik_mukherjee_sketches__0009_sketch-_0002_layer-11.png"
+                                            src="images/blank.gif" alt="" data-width="585" data-height="381"
+                                            data-orig-id="u7269_img" />
                                     </div>
-                                    <div class="SSSlide invi clip_frame clearfix grpelem temp_no_id" data-orig-id="u7289">
+                                    <div class="SSSlide invi clip_frame clearfix grpelem temp_no_id"
+                                        data-orig-id="u7289">
                                         <!-- image -->
-                                        <img class="ImageInclude position_content temp_no_id" data-src="images/siwalikin_siwalik_mukherjee_sketches__0010_layer-4.png" src="images/blank.gif" alt="" data-width="585" data-height="380" data-orig-id="u7289_img" />
+                                        <img class="ImageInclude position_content temp_no_id"
+                                            data-src="images/siwalikin_siwalik_mukherjee_sketches__0010_layer-4.png"
+                                            src="images/blank.gif" alt="" data-width="585" data-height="380"
+                                            data-orig-id="u7289_img" />
                                     </div>
-                                    <div class="SSSlide invi clip_frame clearfix grpelem temp_no_id" data-orig-id="u7309">
+                                    <div class="SSSlide invi clip_frame clearfix grpelem temp_no_id"
+                                        data-orig-id="u7309">
                                         <!-- image -->
-                                        <img class="ImageInclude position_content temp_no_id" data-src="images/siwalikin_siwalik_mukherjee_sketches__0011_layer-3.png" src="images/blank.gif" alt="" data-width="585" data-height="380" data-orig-id="u7309_img" />
+                                        <img class="ImageInclude position_content temp_no_id"
+                                            data-src="images/siwalikin_siwalik_mukherjee_sketches__0011_layer-3.png"
+                                            src="images/blank.gif" alt="" data-width="585" data-height="380"
+                                            data-orig-id="u7309_img" />
                                     </div>
                                 </div>
                             </div>
                             <div class="popup_anchor temp_no_id" data-orig-id="u6984-4popup">
-                                <div class="SSPreviousButton normal-next-prev-button shadow rounded-corners clearfix temp_no_id" data-orig-id="u6984-4">
+                                <div class="SSPreviousButton normal-next-prev-button shadow rounded-corners clearfix temp_no_id"
+                                    data-orig-id="u6984-4">
                                     <!-- content -->
                                     <p class="placeholder" data-placeholder-for="u6984-4_0_content">
                                         <!-- placeholder node -->
@@ -1383,7 +1795,8 @@ window['_fs_namespace'] = 'FS';
                                 </div>
                             </div>
                             <div class="popup_anchor temp_no_id" data-orig-id="u6982-4popup">
-                                <div class="SSNextButton normal-next-prev-button shadow rounded-corners clearfix temp_no_id" data-orig-id="u6982-4">
+                                <div class="SSNextButton normal-next-prev-button shadow rounded-corners clearfix temp_no_id"
+                                    data-orig-id="u6982-4">
                                     <!-- content -->
                                     <p class="placeholder" data-placeholder-for="u6982-4_0_content">
                                         <!-- placeholder node -->
@@ -1409,12 +1822,17 @@ window['_fs_namespace'] = 'FS';
                                 </div>
                                 <div class="clip_frame colelem temp_no_id" data-orig-id="u7799">
                                     <!-- image -->
-                                    <img class="block temp_no_id temp_no_img_src" data-orig-src="images/4-pyrhon.jpg" alt="Python icon" title="Python" data-image-width="40" data-image-height="40" data-orig-id="u7799_img" src="images/blank.gif" />
+                                    <img class="block temp_no_id temp_no_img_src" data-orig-src="images/4-pyrhon.jpg"
+                                        alt="Python icon" title="Python" data-image-width="40" data-image-height="40"
+                                        data-orig-id="u7799_img" src="images/blank.gif" />
                                 </div>
                             </div>
                             <div class="clip_frame grpelem temp_no_id" data-orig-id="u7784">
                                 <!-- image -->
-                                <img class="block temp_no_id temp_no_img_src" data-orig-src="images/gesture-.gif" alt="vicinity gesture controlled data transfer siwalik mukherjee anubhav arukia yash parikh siwalik.in" title="Briefly that's what you can do with Vicinity!" data-image-width="426" data-image-height="239" data-orig-id="u7784_img" src="images/blank.gif" />
+                                <img class="block temp_no_id temp_no_img_src" data-orig-src="images/gesture-.gif"
+                                    alt="vicinity gesture controlled data transfer siwalik mukherjee anubhav arukia yash parikh siwalik.in"
+                                    title="Briefly that's what you can do with Vicinity!" data-image-width="426"
+                                    data-image-height="239" data-orig-id="u7784_img" src="images/blank.gif" />
                             </div>
                         </div>
                     </div>
@@ -1594,19 +2012,20 @@ window['_fs_namespace'] = 'FS';
                                 <div class="position_content" id="u131_position_content">
                                     <div class="rounded-corners clip_frame colelem temp_no_id" data-orig-id="u6543">
                                         <!-- image -->
-                                        <img class="block temp_no_id temp_no_img_src" data-orig-src="images/_dsc0973-crop-u6543.jpg" alt="Siwalik Mukherjee siwalik.in webdeveloper" data-image-width="186" data-image-height="186" data-orig-id="u6543_img" src="images/blank.gif" />
+                                        <img class="block temp_no_id temp_no_img_src"
+                                            data-orig-src="images/_dsc0973-crop-u6543.jpg"
+                                            alt="Siwalik Mukherjee siwalik.in webdeveloper" data-image-width="186"
+                                            data-image-height="186" data-orig-id="u6543_img" src="images/blank.gif" />
                                     </div>
-                                    <div class="clearfix colelem shared_content" id="u12962-21" data-content-guid="u12962-21_content">
+                                    <div class="clearfix colelem shared_content" id="u12962-21"
+                                        data-content-guid="u12962-21_content">
                                         <!-- content -->
                                         <h1 id="u12962-2">I'M SIWALIK</h1>
                                         <h1 id="u12962-4">A CREATIVE</h1>
                                         <h1 id="u12962-6">FRONT-END</h1>
                                         <h1 id="u12962-8">DEVELOPER</h1>
                                         <h1 id="u12962-10">FROM INDIA</h1>
-                                        <h1 id="u12962-15"><span id="u12962-11">I STAND ON </span><span id="u12962-12">A SWEET SPOT</span><span id="u12962-13"> </span><span id="u12962-14">WHERE</span></h1>
-                                        <h1 id="u12962-17">CODE AND DESIGN</h1>
-                                        <h1 id="u12962-19">INTERSECT</h1>
-                                            <h1 id="u12962-11">View complete website on a computer or tab.</h1>
+                                        <h1 id="u12962-11">View complete website on a bigger screen.</h1>
                                     </div>
                                 </div>
                             </div>
@@ -1615,7 +2034,8 @@ window['_fs_namespace'] = 'FS';
                 </div>
 
                 <div class="verticalspacer shared_content" data-content-guid="page_position_content_2_content"></div>
-                <div class="browser_width colelem temp_no_id shared_content" data-orig-id="u7335-bw" data-content-guid="u7335-bw_content">
+                <div class="browser_width colelem temp_no_id shared_content" data-orig-id="u7335-bw"
+                    data-content-guid="u7335-bw_content">
 
                 </div>
             </div>
@@ -1638,7 +2058,10 @@ window['_fs_namespace'] = 'FS';
                                 <div class="position_content temp_no_id" data-orig-id="u131_position_content">
                                     <div class="rounded-corners clip_frame colelem temp_no_id" data-orig-id="u6543">
                                         <!-- image -->
-                                        <img class="block temp_no_id temp_no_img_src" data-orig-src="images/_dsc0973.jpg" alt="Siwalik Mukherjee siwalik.in webdeveloper" data-image-width="227" data-image-height="227" data-orig-id="u6543_img" src="images/blank.gif" />
+                                        <img class="block temp_no_id temp_no_img_src"
+                                            data-orig-src="images/_dsc0973.jpg"
+                                            alt="Siwalik Mukherjee siwalik.in webdeveloper" data-image-width="227"
+                                            data-image-height="227" data-orig-id="u6543_img" src="images/blank.gif" />
                                     </div>
                                     <div class="clearfix colelem placeholder" data-placeholder-for="u12962-21_content">
                                         <!-- placeholder node -->
@@ -1676,7 +2099,9 @@ window['_fs_namespace'] = 'FS';
                             <div class="clearfix temp_no_id" data-orig-id="u131_align_to_page">
                                 <div class="rounded-corners clip_frame colelem temp_no_id" data-orig-id="u6543">
                                     <!-- image -->
-                                    <img class="block temp_no_id temp_no_img_src" data-orig-src="images/_dsc0973.jpg" alt="Siwalik Mukherjee siwalik.in webdeveloper" data-image-width="117" data-image-height="117" data-orig-id="u6543_img" src="images/blank.gif" />
+                                    <img class="block temp_no_id temp_no_img_src" data-orig-src="images/_dsc0973.jpg"
+                                        alt="Siwalik Mukherjee siwalik.in webdeveloper" data-image-width="117"
+                                        data-image-height="117" data-orig-id="u6543_img" src="images/blank.gif" />
                                 </div>
                                 <div class="clearfix colelem placeholder" data-placeholder-for="u12962-21_content">
                                     <!-- placeholder node -->
@@ -1738,20 +2163,20 @@ window['_fs_namespace'] = 'FS';
                                 , k = g && g[1] ? g[1] : null
                                 , g = g && g[2] ? g[2] : null;
                             switch (g.toLowerCase()) {
-                            case "css":
-                                k = k.replace(/\W/gi, "_").replace(/^([^a-z])/gi, "_$1");
-                                c.addClass(k);
-                                var g = b(c.css("color"))
-                                    , h = b(c.css("background-color"));
-                                g != 0 || h != 0 ? (Muse.assets.required.splice(d, 1), "undefined" != typeof a[f] && (g != a[f] >>> 24 || h != (a[f] & 16777215)) && Muse.assets.outOfDate.push(f)) : d++;
-                                c.removeClass(k);
-                                break;
-                            case "js":
-                                k.match(/^jquery-[\d\.]+/gi) &&
-                                    typeof $ != "undefined" ? Muse.assets.required.splice(d, 1) : d++;
-                                break;
-                            default:
-                                throw Error("Unsupported file type: " + g);
+                                case "css":
+                                    k = k.replace(/\W/gi, "_").replace(/^([^a-z])/gi, "_$1");
+                                    c.addClass(k);
+                                    var g = b(c.css("color"))
+                                        , h = b(c.css("background-color"));
+                                    g != 0 || h != 0 ? (Muse.assets.required.splice(d, 1), "undefined" != typeof a[f] && (g != a[f] >>> 24 || h != (a[f] & 16777215)) && Muse.assets.outOfDate.push(f)) : d++;
+                                    c.removeClass(k);
+                                    break;
+                                case "js":
+                                    k.match(/^jquery-[\d\.]+/gi) &&
+                                        typeof $ != "undefined" ? Muse.assets.required.splice(d, 1) : d++;
+                                    break;
+                                default:
+                                    throw Error("Unsupported file type: " + g);
                             }
                         }
                         c.remove();
